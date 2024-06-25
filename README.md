@@ -1,6 +1,6 @@
 # LandauGinzburg
 
-See [Doxygen HTML](https://github.com/o-morikawa/LandauGinzburg/src/html/index.html).
+See [Doxygen HTML](https://o-morikawa.github.io/LandauGinzburg/src/html/index.html).
 
 ## Numerical study of the N=2 Landau--Ginzburg models
 
