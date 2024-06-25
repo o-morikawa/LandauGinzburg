@@ -12,7 +12,7 @@ date   Created on May 8 2018
 Code set for the generation of the configuration of $N(p)$, and the computation of $A(p)$ and sign determinant
 
 ### Environment
-Ubuntu 16.04: landau [Xeon E5 2660V4 2.0GHz 28C/56T], lifshitz2\&3 [Xeon Silver 4114 2.20GHz 10C/20T]
+Ubuntu 16.04: landau [Xeon E5 2660V4 2.0GHz 28C/56T], lifshitz2\&3 [Xeon Silver 4114 2.20GHz 10C/20T], and supercomputer ITO.
 
 ### Command
 ```g++ -std=c++11 (-O2) -fopenmp```
