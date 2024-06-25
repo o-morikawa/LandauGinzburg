@@ -1,0 +1,5 @@
+<map id="Nicolai" name="Nicolai">
+<area shape="rect" id="node1" title="Nicolai map; Compute Vector for NR method." alt="" coords="15,80,77,107"/>
+<area shape="rect" id="node3" href="$class_nicolai_sol.html" title="Execute the Newton–Raphson method; Combine solutions; Obtain sign det for each Scalar." alt="" coords="5,155,87,181"/>
+<area shape="rect" id="node2" href="$class_field.html" title="Generate normal distributions; Compute convolutions." alt="" coords="21,5,71,32"/>
+</map>

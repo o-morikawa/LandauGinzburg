@@ -1,0 +1,8 @@
+<map id="Field" name="Field">
+<area shape="rect" id="node1" title="Generate normal distributions; Compute convolutions." alt="" coords="127,5,178,32"/>
+<area shape="rect" id="node2" href="$class_nicolai.html" title="Nicolai map; Compute Vector for NR method." alt="" coords="24,80,87,107"/>
+<area shape="rect" id="node4" href="$class_potential.html" title="Compute Jacobian and its sign determinant." alt="" coords="116,80,189,107"/>
+<area shape="rect" id="node6" href="$class_scalar.html" title="An solution of Nicolai map; Update to a new solution with NR method; Compute some types of superpoten..." alt="" coords="214,80,273,107"/>
+<area shape="rect" id="node3" href="$class_nicolai_sol.html" title="Execute the Newton–Raphson method; Combine solutions; Obtain sign det for each Scalar." alt="" coords="5,155,87,181"/>
+<area shape="rect" id="node5" href="$class_potential_n_r.html" title="Compute Matrix and Vector for NR method." alt="" coords="111,155,205,181"/>
+</map>

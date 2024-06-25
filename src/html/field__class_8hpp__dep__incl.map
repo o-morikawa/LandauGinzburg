@@ -1,0 +1,10 @@
+<map id="field_class.hpp" name="field_class.hpp">
+<area shape="rect" id="node1" title="Definition of the class Field." alt="" coords="135,5,245,32"/>
+<area shape="rect" id="node2" href="$field__class_8cpp.html" title="Definition of the class Field." alt="" coords="65,80,174,107"/>
+<area shape="rect" id="node3" href="$field__potential_8hpp.html" title="Definition of the class Potential." alt="" coords="199,80,325,107"/>
+<area shape="rect" id="node4" href="$field__nicolai_8hpp.html" title="Definition of the classes associated with Nicolai map." alt="" coords="133,155,247,181"/>
+<area shape="rect" id="node8" href="$field__potential_8cpp.html" title="Definition of the class Potential." alt="" coords="272,155,399,181"/>
+<area shape="rect" id="node5" href="$field__conf_8cpp.html" title="Execute the NR method and Compute sign of determinant." alt="" coords="5,229,108,256"/>
+<area shape="rect" id="node6" href="$field__nicolai_8cpp.html" title="Definition of the classes associated with Nicolai map." alt="" coords="133,229,247,256"/>
+<area shape="rect" id="node7" href="$field__spt_8cpp.html" title="Definition of the methods, Scalar::superpotential and Scalar::superpotential_nr in the case of SuperP..." alt="" coords="271,229,367,256"/>
+</map>
