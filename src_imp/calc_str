@@ -1,0 +1,54 @@
+#!/bin/bash
+fn1="spt-c_lm0-0.3lm1-0.3lm2-0.3lm3-0.03k3L16n0-1"
+
+for fn in $fn1
+do
+
+# Output infile
+echo "Li               16"   >  outputs/${fn}_infile
+echo "num_f            3"   >> outputs/${fn}_infile
+echo "potentialtype    3"   >> outputs/${fn}_infile
+echo "testmode         0"   >> outputs/${fn}_infile
+echo "num_nrsolutions  150" >> outputs/${fn}_infile
+echo "num_nicolai      1"   >> outputs/${fn}_infile
+echo "num_initialnic   0"   >> outputs/${fn}_infile
+echo "num_loop         150" >> outputs/${fn}_infile
+echo "num_power        1"   >> outputs/${fn}_infile
+echo "k                3"   >> outputs/${fn}_infile
+echo "num_coupling     4"   >> outputs/${fn}_infile
+echo "lambda           0.3" >> outputs/${fn}_infile
+echo "lambda           0.3" >> outputs/${fn}_infile
+echo "lambda           0.3" >> outputs/${fn}_infile
+echo "lambda           0.03" >> outputs/${fn}_infile
+
+# Calc and sendmail
+
+##STARTTIME=`date --iso-8601=seconds`
+##(time ./lg_pr13.out outputs/${fn}_infile) &> tmp_out/${fn}_output
+(time ./a.out outputs/${fn}_infile) &> tmp_out/${fn}_output
+##ENDTIME=`date --iso-8601=seconds`
+
+mv tmp_out/${fn}_output outputs/${fn}_output
+
+##echo "From: <morikawa@landau.higgs.kyushu-u.ac.jp>" > mail.txt
+##echo "To: <o-morikawa@phys.kyushu-u.ac.jp>" >> mail.txt
+##echo "Subject: [LG-Torus] Finished ${fn}" >> mail.txt
+##echo "" >> mail.txt
+##echo "O. M." >> mail.txt
+##echo "" >> mail.txt
+##echo "${fn}_infile" >> mail.txt
+##echo "Status     : Simulation finished" >> mail.txt
+##echo "Start time : $STARTTIME" >> mail.txt
+##echo "End time   : $ENDTIME" >> mail.txt
+##echo "" >> mail.txt
+##echo "##" >> mail.txt
+##cat outputs/${fn}_output >> mail.txt
+##echo "" >> mail.txt
+##echo "##" >> mail.txt
+##echo "" >> mail.txt
+##echo "Please do not reply to this message." >> mail.txt
+##cat mail.txt | sendmail -i -t
+##rm mail.txt
+
+done
+

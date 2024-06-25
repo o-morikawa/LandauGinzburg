@@ -1,0 +1,2 @@
+#!/bin/sh
+g++-7 -I/Eigen -std=c++11 -O3 -fopenmp field_class.o field_potential.o field_nicolai.o field_spt.cpp field_conf.cpp

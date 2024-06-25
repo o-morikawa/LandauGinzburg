@@ -1,0 +1,19 @@
+
+main start ...
+Superpotential Type    : Custom type
+Physical Box Size      : 10
+Power in SuperPotential: 3
+Coupling               :  0.3  0.3  0.3 0.03
+
+Configuration Number   : 0~2
+Number of Loop         : 150
+
+Calc start ...
+Calc end ...
+
+209.387sec
+main end ...
+
+real	1m13.807s
+user	3m28.606s
+sys	0m0.786s
