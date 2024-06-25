@@ -1,0 +1,15 @@
+Li               6
+num_f            3
+potentialtype    3
+testmode         0
+num_nrsolutions  100
+num_nicolai      1
+num_initialnic   0
+num_loop         100
+num_power        1
+k                3
+num_coupling     4
+lambda           0.3
+lambda           0.3
+lambda           0.3
+lambda           3.0

@@ -1,0 +1,38 @@
+\hypertarget{more_info2_julia_sec1}{}\doxysection{julia v0.\+5.\+2 on Ubuntu}\label{more_info2_julia_sec1}
+{\ttfamily  sudo add-\/apt-\/repository ppa\+:staticfloat/juliareleases }
+
+{\ttfamily  sudo add-\/apt-\/repository ppa\+:staticfloat/julia-\/deps }\hypertarget{more_info2_julia_sec2}{}\doxysection{julia v0.\+5.\+2 on Mac}\label{more_info2_julia_sec2}
+$<$\href{https://julialang.org/downloads/oldreleases.html}{\texttt{ https\+://julialang.\+org/downloads/oldreleases.\+html}}$>$
+
+{\ttfamily  \#!/usr/bin/env bash }
+
+{\ttfamily  set -\/e }
+
+{\ttfamily  }
+
+{\ttfamily  \# Open new terminal. }
+
+{\ttfamily  SOURCE=\char`\"{}clear \&\& exec \textquotesingle{}/\+Applications/\+Julia-\/0.\+5.\+app/\+Contents/\+Resources/julia/bin/julia\textquotesingle{}\char`\"{} }
+
+{\ttfamily  DIR= }
+
+{\ttfamily  if \mbox{[}\mbox{[} \char`\"{}\$(uname)\char`\"{} = \char`\"{}\+Darwin\char`\"{} \mbox{]}\mbox{]} \&\& \mbox{[}\mbox{[} -\/z \char`\"{}\$\+ON\+\_\+\+NEW\+\_\+\+TERMINAL\char`\"{} \mbox{]}\mbox{]} \&\& \mbox{[}\mbox{[} -\/z \char`\"{}\$\+NO\+\_\+\+NEW\+\_\+\+TERMINAL\char`\"{} \mbox{]}\mbox{]} ; then }
+
+{\ttfamily  osascript -\/e \char`\"{}tell app \textbackslash{}\char`\"{}Terminal"{} to do script "{}cd \$\+DIR \&\& export ON\+\_\+\+NEW\+\_\+\+TERMINAL=1 \&\& \$\+SOURCE"{}"{} }
+
+{\ttfamily  exit 0 }
+
+{\ttfamily  fi }
+
+{\ttfamily  }
+
+{\ttfamily  \# Get the directory path and move it. }
+
+{\ttfamily  while \mbox{[} -\/h \char`\"{}\$\+SOURCE\char`\"{} \mbox{]} ; do SOURCE=\char`\"{}\$(readlink \char`\"{}\$\+SOURCE\char`\"{})\char`\"{}; done }
+
+{\ttfamily  DIR=\char`\"{}\$( cd -\/\+P \char`\"{}\$( dirname \char`\"{}\$\+SOURCE\char`\"{} )/\char`\"{} \&\& pwd )\char`\"{} }
+
+{\ttfamily  cd \char`\"{}\$\+DIR\char`\"{} }\hypertarget{more_info2_julia_sec3}{}\doxysection{Reference}\label{more_info2_julia_sec3}
+Jeff Bezanson, Stefan Karpinski, Viral B. Shah, and Alan Edelman \`{}`Julia\+: A Fast Dynamic Language for Technical Computing,'\textquotesingle{} ar\+Xiv\+:1209.\+5145 \mbox{[}cs.\+PL\mbox{]}
+
+Jeff Bezanson, Alan Edelman, Stefan Karpinski, and Viral B. Shah \`{}`Julia\+: A Fresh Approach to Numerical Computing,'\textquotesingle{} ar\+Xiv\+:1411.\+1607 \mbox{[}cs.\+MS\mbox{]} 

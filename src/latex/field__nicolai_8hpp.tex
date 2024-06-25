@@ -1,0 +1,157 @@
+\hypertarget{field__nicolai_8hpp}{}\doxysection{field\+\_\+nicolai.\+hpp File Reference}
+\label{field__nicolai_8hpp}\index{field\_nicolai.hpp@{field\_nicolai.hpp}}
+
+
+Definition of the classes associated with \mbox{\hyperlink{class_nicolai}{Nicolai}} map.  
+
+
+{\ttfamily \#include \char`\"{}field\+\_\+potential.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_nicolai}{Nicolai}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_nicolai}{Nicolai}} map; Compute Vector for NR method. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_scalar}{Scalar}}
+\begin{DoxyCompactList}\small\item\em An solution of \mbox{\hyperlink{class_nicolai}{Nicolai}} map; Update to a new solution with NR method; Compute some types of superpotential; Identify solutions. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}}
+\begin{DoxyCompactList}\small\item\em Execute the Newton--Raphson method; Combine solutions; Obtain sign det for each \mbox{\hyperlink{class_scalar}{Scalar}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54}{Super\+Potential\+Type}} \{ \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a1298016c45f654289df44f4db80fbc6d}{AlgebraA}}
+, \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54adac952a914d0431d7b2a0a5983ccf8d3}{AlgebraD}}
+, \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a242ae3ca37de56b9a92adeb9303f34ff}{AlgebraE}}
+, \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a90589c47f06eb971d548591f23c285af}{Custom}}
+ \}
+\begin{DoxyCompactList}\small\item\em Types of superpotentials. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{field__nicolai_8hpp_abe91c27559e45c70585841a3c6f842ad}\label{field__nicolai_8hpp_abe91c27559e45c70585841a3c6f842ad}} 
+int \mbox{\hyperlink{field__nicolai_8hpp_abe91c27559e45c70585841a3c6f842ad}{Super\+Potential\+Type\+\_\+\+Std\+Num\+Sol}} (const Vector\+Xi k, const \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54}{Super\+Potential\+Type}} t)
+\begin{DoxyCompactList}\small\item\em Standard number of solutions for each Super\+Potential\+Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \mbox{\hyperlink{field__nicolai_8hpp_a0a66c38ecba87179f9d73b4670ba7c2b}{SOL\+\_\+\+ID\+\_\+\+MAXVAL}}
+\begin{DoxyCompactList}\small\item\em Identification of scalar solutions. \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{field__nicolai_8hpp_a804854e1d328538a2f270690ac0761b3}{MAX\+\_\+\+NRERR}}
+\begin{DoxyCompactList}\small\item\em Max error of NR iteration. \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{field__nicolai_8hpp_a11ddaa9a4708eda87ad53f5090c23c49}{NR\+\_\+\+INTERRUPTION}}
+\begin{DoxyCompactList}\small\item\em Interruption of NR iteration. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{field__nicolai_8hpp_a85f8c2b6f453337818057c72ef872d0a}{Super\+Potential\+Type\+Custom\+\_\+\+Std\+Num\+Sol}}
+\begin{DoxyCompactList}\small\item\em Standard number of solutions for \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a90589c47f06eb971d548591f23c285af}{Super\+Potential\+Type\+::\+Custom}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definition of the classes associated with \mbox{\hyperlink{class_nicolai}{Nicolai}} map. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{field__nicolai_8cpp}{field\+\_\+nicolai.\+cpp}} 
+
+\mbox{\hyperlink{field__spt_8cpp}{field\+\_\+spt.\+cpp}} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Okuto Morikawa 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54}\label{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54}} 
+\index{field\_nicolai.hpp@{field\_nicolai.hpp}!SuperPotentialType@{SuperPotentialType}}
+\index{SuperPotentialType@{SuperPotentialType}!field\_nicolai.hpp@{field\_nicolai.hpp}}
+\doxysubsubsection{\texorpdfstring{SuperPotentialType}{SuperPotentialType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54}{Super\+Potential\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Types of superpotentials. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{field__spt_8cpp}{field\+\_\+spt.\+cpp}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AlgebraA@{AlgebraA}!field\_nicolai.hpp@{field\_nicolai.hpp}}\index{field\_nicolai.hpp@{field\_nicolai.hpp}!AlgebraA@{AlgebraA}}}\mbox{\Hypertarget{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a1298016c45f654289df44f4db80fbc6d}\label{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a1298016c45f654289df44f4db80fbc6d}} 
+AlgebraA&A\+\_\+n\+: x$^\wedge$\{n+1\} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AlgebraD@{AlgebraD}!field\_nicolai.hpp@{field\_nicolai.hpp}}\index{field\_nicolai.hpp@{field\_nicolai.hpp}!AlgebraD@{AlgebraD}}}\mbox{\Hypertarget{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54adac952a914d0431d7b2a0a5983ccf8d3}\label{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54adac952a914d0431d7b2a0a5983ccf8d3}} 
+AlgebraD&D\+\_\+n\+: x$^\wedge$\{n-\/1\} + x y$^\wedge$2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AlgebraE@{AlgebraE}!field\_nicolai.hpp@{field\_nicolai.hpp}}\index{field\_nicolai.hpp@{field\_nicolai.hpp}!AlgebraE@{AlgebraE}}}\mbox{\Hypertarget{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a242ae3ca37de56b9a92adeb9303f34ff}\label{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a242ae3ca37de56b9a92adeb9303f34ff}} 
+AlgebraE&E\+\_\+6\+: x$^\wedge$3 + y$^\wedge$4, E\+\_\+7\+: x$^\wedge$3 + x y$^\wedge$3, E\+\_\+8\+: x$^\wedge$3 + y$^\wedge$5 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Custom@{Custom}!field\_nicolai.hpp@{field\_nicolai.hpp}}\index{field\_nicolai.hpp@{field\_nicolai.hpp}!Custom@{Custom}}}\mbox{\Hypertarget{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a90589c47f06eb971d548591f23c285af}\label{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a90589c47f06eb971d548591f23c285af}} 
+Custom&User\textquotesingle{}s setting \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{field__nicolai_8hpp_a804854e1d328538a2f270690ac0761b3}\label{field__nicolai_8hpp_a804854e1d328538a2f270690ac0761b3}} 
+\index{field\_nicolai.hpp@{field\_nicolai.hpp}!MAX\_NRERR@{MAX\_NRERR}}
+\index{MAX\_NRERR@{MAX\_NRERR}!field\_nicolai.hpp@{field\_nicolai.hpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_NRERR}{MAX\_NRERR}}
+{\footnotesize\ttfamily const double MAX\+\_\+\+NRERR\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Max error of NR iteration. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}} 
+
+\mbox{\hyperlink{class_nicolai_sol_ad0827e54d19a14f58ba1b83821a50ba2}{Nicolai\+Sol\+::nr\+\_\+method}} 
+
+\mbox{\hyperlink{class_nicolai_sol_a53719ba423b18071cc386b3149d793e8}{Nicolai\+Sol\+::test\+\_\+nr\+\_\+method}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{field__nicolai_8hpp_a11ddaa9a4708eda87ad53f5090c23c49}\label{field__nicolai_8hpp_a11ddaa9a4708eda87ad53f5090c23c49}} 
+\index{field\_nicolai.hpp@{field\_nicolai.hpp}!NR\_INTERRUPTION@{NR\_INTERRUPTION}}
+\index{NR\_INTERRUPTION@{NR\_INTERRUPTION}!field\_nicolai.hpp@{field\_nicolai.hpp}}
+\doxysubsubsection{\texorpdfstring{NR\_INTERRUPTION}{NR\_INTERRUPTION}}
+{\footnotesize\ttfamily const double NR\+\_\+\+INTERRUPTION\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Interruption of NR iteration. 
+
+Interrupt NR iteration if nr\+\_\+err / min(nr\+\_\+err) $>$= this parameter \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}} 
+
+\mbox{\hyperlink{class_nicolai_sol_ad0827e54d19a14f58ba1b83821a50ba2}{Nicolai\+Sol\+::nr\+\_\+method}} 
+
+\mbox{\hyperlink{class_nicolai_sol_a53719ba423b18071cc386b3149d793e8}{Nicolai\+Sol\+::test\+\_\+nr\+\_\+method}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{field__nicolai_8hpp_a0a66c38ecba87179f9d73b4670ba7c2b}\label{field__nicolai_8hpp_a0a66c38ecba87179f9d73b4670ba7c2b}} 
+\index{field\_nicolai.hpp@{field\_nicolai.hpp}!SOL\_ID\_MAXVAL@{SOL\_ID\_MAXVAL}}
+\index{SOL\_ID\_MAXVAL@{SOL\_ID\_MAXVAL}!field\_nicolai.hpp@{field\_nicolai.hpp}}
+\doxysubsubsection{\texorpdfstring{SOL\_ID\_MAXVAL}{SOL\_ID\_MAXVAL}}
+{\footnotesize\ttfamily const double SOL\+\_\+\+ID\+\_\+\+MAXVAL\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Identification of scalar solutions. 
+
+If the norm of difference between two Scalars $<$ SOL\+\_\+\+ID\+\_\+\+MAXVAL, we regard those configurations as identical ones \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_scalar}{Scalar}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{field__nicolai_8hpp_a85f8c2b6f453337818057c72ef872d0a}\label{field__nicolai_8hpp_a85f8c2b6f453337818057c72ef872d0a}} 
+\index{field\_nicolai.hpp@{field\_nicolai.hpp}!SuperPotentialTypeCustom\_StdNumSol@{SuperPotentialTypeCustom\_StdNumSol}}
+\index{SuperPotentialTypeCustom\_StdNumSol@{SuperPotentialTypeCustom\_StdNumSol}!field\_nicolai.hpp@{field\_nicolai.hpp}}
+\doxysubsubsection{\texorpdfstring{SuperPotentialTypeCustom\_StdNumSol}{SuperPotentialTypeCustom\_StdNumSol}}
+{\footnotesize\ttfamily const int Super\+Potential\+Type\+Custom\+\_\+\+Std\+Num\+Sol\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Standard number of solutions for \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a90589c47f06eb971d548591f23c285af}{Super\+Potential\+Type\+::\+Custom}}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{field__nicolai_8hpp_abe91c27559e45c70585841a3c6f842ad}{Super\+Potential\+Type\+\_\+\+Std\+Num\+Sol}} 
+\end{DoxySeeAlso}

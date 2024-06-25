@@ -1,0 +1,154 @@
+\hypertarget{class_potential}{}\doxysection{Potential Class Reference}
+\label{class_potential}\index{Potential@{Potential}}
+
+
+Compute Jacobian and its sign determinant.  
+
+
+
+
+{\ttfamily \#include $<$field\+\_\+potential.\+hpp$>$}
+
+Inheritance diagram for Potential\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_potential}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_potential_a18dc20b241c7713cbbd5b0a359668105}\label{class_potential_a18dc20b241c7713cbbd5b0a359668105}} 
+\mbox{\hyperlink{class_potential_a18dc20b241c7713cbbd5b0a359668105}{Potential}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_potential}{Potential}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_potential_aa36bb7d8ccb9147b2b108fce4c8f7b3b}{Potential}} (const int n1, const int n2, const \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}} n3=\mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a459e81ba9fb98a6755294c808047dce7}{Distribution\+::\+Zero\+\_\+conf}})
+\begin{DoxyCompactList}\small\item\em Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_potential_a73bc51a7c8207181ce4e38245eb8d086}{Potential}} (const Matrix\+Xcd \&m)
+\begin{DoxyCompactList}\small\item\em Set {\itshape Li} and {\itshape field} from Matrix\+Xcd, but {\itshape num\+\_\+f} such as {\itshape num\+\_\+f(num\+\_\+f+1)/2==field.\+cols()} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_potential_aa42b8c418d4eaa383c305da8aef4da62}{Potential}} (const Matrix\+Xcd \&m, const int num\+\_\+field)
+\begin{DoxyCompactList}\small\item\em Set {\itshape Li} and {\itshape field} from Matrix\+Xcd, but {\itshape num\+\_\+f=num\+\_\+field} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_potential_ad50069dfb8df6538d94c4e3dcce26a6d}\label{class_potential_ad50069dfb8df6538d94c4e3dcce26a6d}} 
+virtual \mbox{\hyperlink{class_potential_ad50069dfb8df6538d94c4e3dcce26a6d}{$\sim$\+Potential}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{class_potential}{Potential}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_potential_a2d5250a2835de5d9555e45cce7737ba5}\label{class_potential_a2d5250a2835de5d9555e45cce7737ba5}} 
+virtual bool \mbox{\hyperlink{class_potential_a2d5250a2835de5d9555e45cce7737ba5}{operator==}} (const \mbox{\hyperlink{class_potential}{Potential}} \&p)
+\begin{DoxyCompactList}\small\item\em Is identical ({\itshape Li}, {\itshape num\+\_\+f}) ? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_potential_a7375bc1de007442576616af8dd1cf192}\label{class_potential_a7375bc1de007442576616af8dd1cf192}} 
+virtual bool \mbox{\hyperlink{class_potential_a7375bc1de007442576616af8dd1cf192}{operator!=}} (const \mbox{\hyperlink{class_potential}{Potential}} \&p)
+\begin{DoxyCompactList}\small\item\em Not identical ({\itshape Li}, {\itshape num\+\_\+f}) ? \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_potential_a5d08820a2c681123c72a6b725336e424}{sign\+\_\+det}} (const int debug=0) const
+\begin{DoxyCompactList}\small\item\em Sign determinant with a fast algorithm ({\itshape num\+\_\+f $<$ 4}) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_potential_a64e9d020216e6fe0204b7e3717ab4fcd}{sign\+\_\+det4multifield}} (const int debug=0) const
+\begin{DoxyCompactList}\small\item\em Sign determinant for mutli-\/superfield. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_potential_a39026d5b1479a3b5401079d480560def}\label{class_potential_a39026d5b1479a3b5401079d480560def}} 
+virtual void \mbox{\hyperlink{class_potential_a39026d5b1479a3b5401079d480560def}{show}} () const
+\begin{DoxyCompactList}\small\item\em Output {\itshape Li}, {\itshape field}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Compute Jacobian and its sign determinant. 
+
+{\itshape field\+:} {\itshape partial\+\_\+i partial\+\_\+j W(\{A\}) (p) with i $<$= j}; Then, {\itshape num\+\_\+f!=field.\+cols()}, but {\itshape n2(n2+1)/2==field.\+cols()} \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field}{Field}} 
+
+\mbox{\hyperlink{class_potential_n_r}{Potential\+NR}} 
+
+\mbox{\hyperlink{namespace_matrix_comp}{Matrix\+Comp}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_potential_aa36bb7d8ccb9147b2b108fce4c8f7b3b}\label{class_potential_aa36bb7d8ccb9147b2b108fce4c8f7b3b}} 
+\index{Potential@{Potential}!Potential@{Potential}}
+\index{Potential@{Potential}!Potential@{Potential}}
+\doxysubsubsection{\texorpdfstring{Potential()}{Potential()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Potential\+::\+Potential (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}}}]{n3 = {\ttfamily \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a459e81ba9fb98a6755294c808047dce7}{Distribution\+::\+Zero\+\_\+conf}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Set {\itshape Li} \\
+\hline
+{\em n2} & Set {\itshape num\+\_\+f}; {\itshape n2(n2+1)/2==field.\+cols()} \\
+\hline
+{\em n3} & Set normal distribution type \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a7c3586ce462ade2c4897198f35b0c838}{setconf}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_potential_a73bc51a7c8207181ce4e38245eb8d086}\label{class_potential_a73bc51a7c8207181ce4e38245eb8d086}} 
+\index{Potential@{Potential}!Potential@{Potential}}
+\index{Potential@{Potential}!Potential@{Potential}}
+\doxysubsubsection{\texorpdfstring{Potential()}{Potential()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Potential\+::\+Potential (\begin{DoxyParamCaption}\item[{const Matrix\+Xcd \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Set {\itshape Li} and {\itshape field} from Matrix\+Xcd, but {\itshape num\+\_\+f} such as {\itshape num\+\_\+f(num\+\_\+f+1)/2==field.\+cols()} 
+
+\begin{DoxySeeAlso}{See also}
+setpotential 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_potential_aa42b8c418d4eaa383c305da8aef4da62}\label{class_potential_aa42b8c418d4eaa383c305da8aef4da62}} 
+\index{Potential@{Potential}!Potential@{Potential}}
+\index{Potential@{Potential}!Potential@{Potential}}
+\doxysubsubsection{\texorpdfstring{Potential()}{Potential()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Potential\+::\+Potential (\begin{DoxyParamCaption}\item[{const Matrix\+Xcd \&}]{m,  }\item[{const int}]{num\+\_\+field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Set {\itshape Li} and {\itshape field} from Matrix\+Xcd, but {\itshape num\+\_\+f=num\+\_\+field} 
+
+{\itshape num\+\_\+f(num\+\_\+f+1)/2==field.\+cols()} \begin{DoxySeeAlso}{See also}
+setpotential 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_potential_a5d08820a2c681123c72a6b725336e424}\label{class_potential_a5d08820a2c681123c72a6b725336e424}} 
+\index{Potential@{Potential}!sign\_det@{sign\_det}}
+\index{sign\_det@{sign\_det}!Potential@{Potential}}
+\doxysubsubsection{\texorpdfstring{sign\_det()}{sign\_det()}}
+{\footnotesize\ttfamily int Potential\+::sign\+\_\+det (\begin{DoxyParamCaption}\item[{const int}]{debug = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+
+
+Sign determinant with a fast algorithm ({\itshape num\+\_\+f $<$ 4}) 
+
+Probability of faster cases than \mbox{\hyperlink{class_potential_a64e9d020216e6fe0204b7e3717ab4fcd}{Potential\+::sign\+\_\+det4multifield}}\+: {\itshape num\+\_\+f=1}\+: 99.\+9\%, {\itshape num\+\_\+f=2}\+: 99\% {\itshape num\+\_\+f=3}\+: 97-\/98\% 
+\begin{DoxyParams}{Parameters}
+{\em debug} & Debugging mode on(0)/off(1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_matrix_comp_ae696d65506ce69d17ed7123ed2b5307f}{Matrix\+Comp\+::\+Sign\+Det}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_potential_a64e9d020216e6fe0204b7e3717ab4fcd}\label{class_potential_a64e9d020216e6fe0204b7e3717ab4fcd}} 
+\index{Potential@{Potential}!sign\_det4multifield@{sign\_det4multifield}}
+\index{sign\_det4multifield@{sign\_det4multifield}!Potential@{Potential}}
+\doxysubsubsection{\texorpdfstring{sign\_det4multifield()}{sign\_det4multifield()}}
+{\footnotesize\ttfamily int Potential\+::sign\+\_\+det4multifield (\begin{DoxyParamCaption}\item[{const int}]{debug = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+
+
+Sign determinant for mutli-\/superfield. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em debug} & Debugging mode on(0)/off(1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_matrix_comp_ae696d65506ce69d17ed7123ed2b5307f}{Matrix\+Comp\+::\+Sign\+Det}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{field__potential_8hpp}{field\+\_\+potential.\+hpp}}\item 
+\mbox{\hyperlink{field__potential_8cpp}{field\+\_\+potential.\+cpp}}\end{DoxyCompactItemize}

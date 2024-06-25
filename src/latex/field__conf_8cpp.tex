@@ -1,0 +1,132 @@
+\hypertarget{field__conf_8cpp}{}\doxysection{field\+\_\+conf.\+cpp File Reference}
+\label{field__conf_8cpp}\index{field\_conf.cpp@{field\_conf.cpp}}
+
+
+Execute the NR method and Compute sign of determinant.  
+
+
+{\ttfamily \#include \char`\"{}field\+\_\+nicolai.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structlg__params__t}{lg\+\_\+params\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure \mbox{\hyperlink{structlg__params__t}{lg\+\_\+params\+\_\+t}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{field__conf_8cpp_a54e1512867ad7bc42258362799975e76}{Nicolai\+Conf}} (const \mbox{\hyperlink{structlg__params__t}{lg\+\_\+params\+\_\+t}} lp)
+\begin{DoxyCompactList}\small\item\em Solve a Landau--Ginzburg model by NR method; Parallel computing with openmp. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{field__conf_8cpp_aef4771c26f75dd696d84b9876d8835ff}{Test\+\_\+\+Sign\+Det}} (const int Li, const int num\+\_\+f, const int loop)
+\begin{DoxyCompactList}\small\item\em Test program\+: computation of sign\+\_\+det() in \mbox{\hyperlink{class_potential}{Potential}}; Compare signs and times, which are computed by using two forms of jacobian. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{field__conf_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{field__conf_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+int \mbox{\hyperlink{field__conf_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \mbox{\hyperlink{field__conf_8cpp_a0a66c38ecba87179f9d73b4670ba7c2b}{SOL\+\_\+\+ID\+\_\+\+MAXVAL}} = 1.\+0e-\/11
+\begin{DoxyCompactList}\small\item\em Identification of scalar solutions. \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{field__conf_8cpp_a804854e1d328538a2f270690ac0761b3}{MAX\+\_\+\+NRERR}} = 1.\+0e-\/14
+\begin{DoxyCompactList}\small\item\em Max error of NR iteration. \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{field__conf_8cpp_a11ddaa9a4708eda87ad53f5090c23c49}{NR\+\_\+\+INTERRUPTION}} = 1.\+0e9
+\begin{DoxyCompactList}\small\item\em Interruption of NR iteration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Execute the NR method and Compute sign of determinant. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{field__class_8hpp}{field\+\_\+class.\+hpp}} 
+
+\mbox{\hyperlink{field__potential_8hpp}{field\+\_\+potential.\+hpp}} 
+
+\mbox{\hyperlink{field__nicolai_8hpp}{field\+\_\+nicolai.\+hpp}} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Okuto Morikawa 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{field__conf_8cpp_a54e1512867ad7bc42258362799975e76}\label{field__conf_8cpp_a54e1512867ad7bc42258362799975e76}} 
+\index{field\_conf.cpp@{field\_conf.cpp}!NicolaiConf@{NicolaiConf}}
+\index{NicolaiConf@{NicolaiConf}!field\_conf.cpp@{field\_conf.cpp}}
+\doxysubsubsection{\texorpdfstring{NicolaiConf()}{NicolaiConf()}}
+{\footnotesize\ttfamily void Nicolai\+Conf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structlg__params__t}{lg\+\_\+params\+\_\+t}}}]{params }\end{DoxyParamCaption})}
+
+
+
+Solve a Landau--Ginzburg model by NR method; Parallel computing with openmp. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structlg__params__t}{lg\+\_\+params\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{field__conf_8cpp_aef4771c26f75dd696d84b9876d8835ff}\label{field__conf_8cpp_aef4771c26f75dd696d84b9876d8835ff}} 
+\index{field\_conf.cpp@{field\_conf.cpp}!Test\_SignDet@{Test\_SignDet}}
+\index{Test\_SignDet@{Test\_SignDet}!field\_conf.cpp@{field\_conf.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_SignDet()}{Test\_SignDet()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Sign\+Det (\begin{DoxyParamCaption}\item[{const int}]{Li,  }\item[{const int}]{num\+\_\+f,  }\item[{const int}]{loop }\end{DoxyParamCaption})}
+
+
+
+Test program\+: computation of sign\+\_\+det() in \mbox{\hyperlink{class_potential}{Potential}}; Compare signs and times, which are computed by using two forms of jacobian. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Li} & Physical box size, {\itshape N\+\_\+0=N\+\_\+1}, which must be even integer \\
+\hline
+{\em num\+\_\+f} & Number of superfields \\
+\hline
+{\em loop} & Number of trials \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{field__conf_8cpp_a804854e1d328538a2f270690ac0761b3}\label{field__conf_8cpp_a804854e1d328538a2f270690ac0761b3}} 
+\index{field\_conf.cpp@{field\_conf.cpp}!MAX\_NRERR@{MAX\_NRERR}}
+\index{MAX\_NRERR@{MAX\_NRERR}!field\_conf.cpp@{field\_conf.cpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_NRERR}{MAX\_NRERR}}
+{\footnotesize\ttfamily const double MAX\+\_\+\+NRERR = 1.\+0e-\/14}
+
+
+
+Max error of NR iteration. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}} 
+
+\mbox{\hyperlink{class_nicolai_sol_ad0827e54d19a14f58ba1b83821a50ba2}{Nicolai\+Sol\+::nr\+\_\+method}} 
+
+\mbox{\hyperlink{class_nicolai_sol_a53719ba423b18071cc386b3149d793e8}{Nicolai\+Sol\+::test\+\_\+nr\+\_\+method}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{field__conf_8cpp_a11ddaa9a4708eda87ad53f5090c23c49}\label{field__conf_8cpp_a11ddaa9a4708eda87ad53f5090c23c49}} 
+\index{field\_conf.cpp@{field\_conf.cpp}!NR\_INTERRUPTION@{NR\_INTERRUPTION}}
+\index{NR\_INTERRUPTION@{NR\_INTERRUPTION}!field\_conf.cpp@{field\_conf.cpp}}
+\doxysubsubsection{\texorpdfstring{NR\_INTERRUPTION}{NR\_INTERRUPTION}}
+{\footnotesize\ttfamily const double NR\+\_\+\+INTERRUPTION = 1.\+0e9}
+
+
+
+Interruption of NR iteration. 
+
+Interrupt NR iteration if nr\+\_\+err / min(nr\+\_\+err) $>$= this parameter \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}} 
+
+\mbox{\hyperlink{class_nicolai_sol_ad0827e54d19a14f58ba1b83821a50ba2}{Nicolai\+Sol\+::nr\+\_\+method}} 
+
+\mbox{\hyperlink{class_nicolai_sol_a53719ba423b18071cc386b3149d793e8}{Nicolai\+Sol\+::test\+\_\+nr\+\_\+method}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{field__conf_8cpp_a0a66c38ecba87179f9d73b4670ba7c2b}\label{field__conf_8cpp_a0a66c38ecba87179f9d73b4670ba7c2b}} 
+\index{field\_conf.cpp@{field\_conf.cpp}!SOL\_ID\_MAXVAL@{SOL\_ID\_MAXVAL}}
+\index{SOL\_ID\_MAXVAL@{SOL\_ID\_MAXVAL}!field\_conf.cpp@{field\_conf.cpp}}
+\doxysubsubsection{\texorpdfstring{SOL\_ID\_MAXVAL}{SOL\_ID\_MAXVAL}}
+{\footnotesize\ttfamily const double SOL\+\_\+\+ID\+\_\+\+MAXVAL = 1.\+0e-\/11}
+
+
+
+Identification of scalar solutions. 
+
+If the norm of difference between two Scalars $<$ SOL\+\_\+\+ID\+\_\+\+MAXVAL, we regard those configurations as identical ones \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_scalar}{Scalar}} 
+\end{DoxySeeAlso}

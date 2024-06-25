@@ -1,0 +1,83 @@
+\hypertarget{namespace_matrix_comp}{}\doxysection{Matrix\+Comp Namespace Reference}
+\label{namespace_matrix_comp}\index{MatrixComp@{MatrixComp}}
+
+
+Mainly functions to compute Jacobian for uni-\/superfield.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Matrix\+Xcd \mbox{\hyperlink{namespace_matrix_comp_afc0adc1138fc9fc3d167d7c5afebabcb}{Resize\+Matrix}} (const Matrix\+Xcd \&m, const int rw, const int cl)
+\begin{DoxyCompactList}\small\item\em Output m as Matrix\+Xcd(rw, cl) with zeros. \end{DoxyCompactList}\item 
+Matrix\+Xcd \mbox{\hyperlink{namespace_matrix_comp_a76045bce83466a18320f5deff378f52f}{Delete\+Zero\+Line}} (const Matrix\+Xcd \&m)
+\begin{DoxyCompactList}\small\item\em Delete a row and a column with {\itshape p=0}, {\itshape q=0}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_matrix_comp_ab38edd36e94565b726ccc554a2771517}{Diff\+LU}} (const Matrix\+Xcd \&m, const Partial\+Piv\+LU$<$ Matrix\+Xcd $>$ \&lu)
+\begin{DoxyCompactList}\small\item\em Difference between a matrix and its LU decomposition. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_matrix_comp_ae696d65506ce69d17ed7123ed2b5307f}{Sign\+Det}} (const Matrix\+Xcd \&m, const int debug=0)
+\begin{DoxyCompactList}\small\item\em Sign of determinant with LU Decomposition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Mainly functions to compute Jacobian for uni-\/superfield. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_potential}{Potential}} 
+
+\mbox{\hyperlink{class_potential_n_r}{Potential\+NR}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_matrix_comp_a76045bce83466a18320f5deff378f52f}\label{namespace_matrix_comp_a76045bce83466a18320f5deff378f52f}} 
+\index{MatrixComp@{MatrixComp}!DeleteZeroLine@{DeleteZeroLine}}
+\index{DeleteZeroLine@{DeleteZeroLine}!MatrixComp@{MatrixComp}}
+\doxysubsubsection{\texorpdfstring{DeleteZeroLine()}{DeleteZeroLine()}}
+{\footnotesize\ttfamily Matrix\+Xcd Matrix\+Comp\+::\+Delete\+Zero\+Line (\begin{DoxyParamCaption}\item[{const Matrix\+Xcd \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Delete a row and a column with {\itshape p=0}, {\itshape q=0}. 
+
+\begin{DoxySeeAlso}{See also}
+Potential\+::unifield\+\_\+tilde\+\_\+type 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespace_matrix_comp_ab38edd36e94565b726ccc554a2771517}\label{namespace_matrix_comp_ab38edd36e94565b726ccc554a2771517}} 
+\index{MatrixComp@{MatrixComp}!DiffLU@{DiffLU}}
+\index{DiffLU@{DiffLU}!MatrixComp@{MatrixComp}}
+\doxysubsubsection{\texorpdfstring{DiffLU()}{DiffLU()}}
+{\footnotesize\ttfamily double Matrix\+Comp\+::\+Diff\+LU (\begin{DoxyParamCaption}\item[{const Matrix\+Xcd \&}]{m,  }\item[{const Partial\+Piv\+LU$<$ Matrix\+Xcd $>$ \&}]{lu }\end{DoxyParamCaption})}
+
+
+
+Difference between a matrix and its LU decomposition. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_matrix_comp_ae696d65506ce69d17ed7123ed2b5307f}{Matrix\+Comp\+::\+Sign\+Det}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespace_matrix_comp_afc0adc1138fc9fc3d167d7c5afebabcb}\label{namespace_matrix_comp_afc0adc1138fc9fc3d167d7c5afebabcb}} 
+\index{MatrixComp@{MatrixComp}!ResizeMatrix@{ResizeMatrix}}
+\index{ResizeMatrix@{ResizeMatrix}!MatrixComp@{MatrixComp}}
+\doxysubsubsection{\texorpdfstring{ResizeMatrix()}{ResizeMatrix()}}
+{\footnotesize\ttfamily Matrix\+Xcd Matrix\+Comp\+::\+Resize\+Matrix (\begin{DoxyParamCaption}\item[{const Matrix\+Xcd \&}]{m,  }\item[{const int}]{rw,  }\item[{const int}]{cl }\end{DoxyParamCaption})}
+
+
+
+Output m as Matrix\+Xcd(rw, cl) with zeros. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_potential_n_r_a785b96199ad3948d6b7d1414d7acb3cf}{Potential\+NR\+::\+Potential\+NR}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespace_matrix_comp_ae696d65506ce69d17ed7123ed2b5307f}\label{namespace_matrix_comp_ae696d65506ce69d17ed7123ed2b5307f}} 
+\index{MatrixComp@{MatrixComp}!SignDet@{SignDet}}
+\index{SignDet@{SignDet}!MatrixComp@{MatrixComp}}
+\doxysubsubsection{\texorpdfstring{SignDet()}{SignDet()}}
+{\footnotesize\ttfamily int Matrix\+Comp\+::\+Sign\+Det (\begin{DoxyParamCaption}\item[{const Matrix\+Xcd \&}]{m,  }\item[{const int}]{debug = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Sign of determinant with LU Decomposition. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_matrix_comp_ab38edd36e94565b726ccc554a2771517}{Matrix\+Comp\+::\+Diff\+LU}} 
+\end{DoxySeeAlso}

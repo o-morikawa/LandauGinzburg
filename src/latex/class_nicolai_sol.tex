@@ -1,0 +1,166 @@
+\hypertarget{class_nicolai_sol}{}\doxysection{Nicolai\+Sol Class Reference}
+\label{class_nicolai_sol}\index{NicolaiSol@{NicolaiSol}}
+
+
+Execute the Newton--Raphson method; Combine solutions; Obtain sign det for each \mbox{\hyperlink{class_scalar}{Scalar}}.  
+
+
+
+
+{\ttfamily \#include $<$field\+\_\+nicolai.\+hpp$>$}
+
+Inheritance diagram for Nicolai\+Sol\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_nicolai_sol}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_nicolai_sol_abf8e61067908be7d376afddfbecf25f6}\label{class_nicolai_sol_abf8e61067908be7d376afddfbecf25f6}} 
+\mbox{\hyperlink{class_nicolai_sol_abf8e61067908be7d376afddfbecf25f6}{Nicolai\+Sol}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nicolai_sol_a2b809125185e9f26b3a33fea9b06d888}{Nicolai\+Sol}} (const int n1, const int n2, const int n3)
+\begin{DoxyCompactList}\small\item\em Set members of the class \mbox{\hyperlink{class_nicolai}{Nicolai}}\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_nicolai_sol_aecdccaf0bd55a28cb2dba47f472bdcdc}\label{class_nicolai_sol_aecdccaf0bd55a28cb2dba47f472bdcdc}} 
+\mbox{\hyperlink{class_nicolai_sol_aecdccaf0bd55a28cb2dba47f472bdcdc}{$\sim$\+Nicolai\+Sol}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_nicolai_sol_aae32d62eb2151561651bcf9bb5e29122}{operator==}} (const \mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}} \&f)
+\begin{DoxyCompactList}\small\item\em Is identical ({\itshape Li}, {\itshape num\+\_\+f}, field) ? \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_nicolai_sol_a43fe596a2fca3835e0afb012ee91c3d6}{operator!=}} (const \mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}} \&f)
+\begin{DoxyCompactList}\small\item\em Not identical ({\itshape Li}, {\itshape num\+\_\+f}, field) ? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_nicolai_sol_a520ed3658641c3c6ca6a60369cdc593d}\label{class_nicolai_sol_a520ed3658641c3c6ca6a60369cdc593d}} 
+\mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}} \& \mbox{\hyperlink{class_nicolai_sol_a520ed3658641c3c6ca6a60369cdc593d}{add\+\_\+sol}} (const \mbox{\hyperlink{class_scalar}{Scalar}} \&f, const double \&err)
+\begin{DoxyCompactList}\small\item\em Add a new solution; Ignore identical one. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_nicolai_sol_af259e6c221fb95a0587112f72e0610ba}\label{class_nicolai_sol_af259e6c221fb95a0587112f72e0610ba}} 
+\mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}} \& \mbox{\hyperlink{class_nicolai_sol_af259e6c221fb95a0587112f72e0610ba}{add\+\_\+sol}} (const \mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}} \&sol)
+\begin{DoxyCompactList}\small\item\em Add a new solution; Ignore identical ones. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_nicolai_sol_a0189c4382ab23bab15784db25590a7b0}\label{class_nicolai_sol_a0189c4382ab23bab15784db25590a7b0}} 
+int \mbox{\hyperlink{class_nicolai_sol_a0189c4382ab23bab15784db25590a7b0}{num\+\_\+sol}} () const
+\begin{DoxyCompactList}\small\item\em Number of solutions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_nicolai_sol_ab424a158a72391104796a7eea2a3efa1}\label{class_nicolai_sol_ab424a158a72391104796a7eea2a3efa1}} 
+double \mbox{\hyperlink{class_nicolai_sol_ab424a158a72391104796a7eea2a3efa1}{max\+\_\+err}} () const
+\begin{DoxyCompactList}\small\item\em Maximum error of NR method. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_nicolai_sol_ad0827e54d19a14f58ba1b83821a50ba2}{nr\+\_\+method}} (const Vector\+Xi k, const Vector\+Xd lambda, const int num\+\_\+nrsol, const int LOOP, const \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54}{Super\+Potential\+Type}} t=\mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a1298016c45f654289df44f4db80fbc6d}{Super\+Potential\+Type\+::\+AlgebraA}})
+\begin{DoxyCompactList}\small\item\em Newton--Raphson method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_nicolai_sol_a53719ba423b18071cc386b3149d793e8}{test\+\_\+nr\+\_\+method}} (const Vector\+Xi k, const Vector\+Xd lambda, const int LOOP, const int TRIAL, const \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54}{Super\+Potential\+Type}} t=\mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a1298016c45f654289df44f4db80fbc6d}{Super\+Potential\+Type\+::\+AlgebraA}})
+\begin{DoxyCompactList}\small\item\em Observe the numerical convergence of NR method for each system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_nicolai_sol_a5b333cd0e91b2f559a5b93bc75657e40}\label{class_nicolai_sol_a5b333cd0e91b2f559a5b93bc75657e40}} 
+int \mbox{\hyperlink{class_nicolai_sol_a5b333cd0e91b2f559a5b93bc75657e40}{sign\+\_\+det}} (const int n) const
+\begin{DoxyCompactList}\small\item\em Sign determinant (Jacobian) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_nicolai_sol_a1f5f1dc34ba6cc354c1ee0acb02c5cf4}\label{class_nicolai_sol_a1f5f1dc34ba6cc354c1ee0acb02c5cf4}} 
+void \mbox{\hyperlink{class_nicolai_sol_a1f5f1dc34ba6cc354c1ee0acb02c5cf4}{phi\+\_\+output}} (const int \mbox{\hyperlink{class_nicolai_a27e00d6c367ebdb01c792006e057d292}{in}}, const Vector\+Xi signs) const
+\begin{DoxyCompactList}\small\item\em Output to file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_nicolai_sol_af31d9659274cc8d8ace16668adfe1198}\label{class_nicolai_sol_af31d9659274cc8d8ace16668adfe1198}} 
+void \mbox{\hyperlink{class_nicolai_sol_af31d9659274cc8d8ace16668adfe1198}{show}} () const
+\begin{DoxyCompactList}\small\item\em Output Scalars. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Execute the Newton--Raphson method; Combine solutions; Obtain sign det for each \mbox{\hyperlink{class_scalar}{Scalar}}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_scalar}{Scalar}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_nicolai_sol_a2b809125185e9f26b3a33fea9b06d888}\label{class_nicolai_sol_a2b809125185e9f26b3a33fea9b06d888}} 
+\index{NicolaiSol@{NicolaiSol}!NicolaiSol@{NicolaiSol}}
+\index{NicolaiSol@{NicolaiSol}!NicolaiSol@{NicolaiSol}}
+\doxysubsubsection{\texorpdfstring{NicolaiSol()}{NicolaiSol()}}
+{\footnotesize\ttfamily Nicolai\+Sol\+::\+Nicolai\+Sol (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const int}]{n3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Set members of the class \mbox{\hyperlink{class_nicolai}{Nicolai}}\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Set {\itshape Li} \\
+\hline
+{\em n2} & Set {\itshape num\+\_\+f} \\
+\hline
+{\em n3} & Set in \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_nicolai_sol_ad0827e54d19a14f58ba1b83821a50ba2}\label{class_nicolai_sol_ad0827e54d19a14f58ba1b83821a50ba2}} 
+\index{NicolaiSol@{NicolaiSol}!nr\_method@{nr\_method}}
+\index{nr\_method@{nr\_method}!NicolaiSol@{NicolaiSol}}
+\doxysubsubsection{\texorpdfstring{nr\_method()}{nr\_method()}}
+{\footnotesize\ttfamily double Nicolai\+Sol\+::nr\+\_\+method (\begin{DoxyParamCaption}\item[{const Vector\+Xi}]{k,  }\item[{const Vector\+Xd}]{lambda,  }\item[{const int}]{num\+\_\+nrsol,  }\item[{const int}]{LOOP,  }\item[{const \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54}{Super\+Potential\+Type}}}]{t = {\ttfamily \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a1298016c45f654289df44f4db80fbc6d}{Super\+Potential\+Type\+::\+AlgebraA}}} }\end{DoxyParamCaption})}
+
+
+
+Newton--Raphson method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & Power in superpotential \\
+\hline
+{\em lambda} & Coupling \\
+\hline
+{\em num\+\_\+nrsol} & Number of \char`\"{}convergent\char`\"{} trials of NR method \\
+\hline
+{\em LOOP} & Maximum number of iteration \\
+\hline
+{\em t} & Type of Super\+Potential \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of omitting initial configuraiotns because of divergence 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_nicolai_sol_a43fe596a2fca3835e0afb012ee91c3d6}\label{class_nicolai_sol_a43fe596a2fca3835e0afb012ee91c3d6}} 
+\index{NicolaiSol@{NicolaiSol}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!NicolaiSol@{NicolaiSol}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Nicolai\+Sol\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}} \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Not identical ({\itshape Li}, {\itshape num\+\_\+f}, field) ? 
+
+Note that the operator compares {\itshape field}s \mbox{\Hypertarget{class_nicolai_sol_aae32d62eb2151561651bcf9bb5e29122}\label{class_nicolai_sol_aae32d62eb2151561651bcf9bb5e29122}} 
+\index{NicolaiSol@{NicolaiSol}!operator==@{operator==}}
+\index{operator==@{operator==}!NicolaiSol@{NicolaiSol}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Nicolai\+Sol\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}} \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is identical ({\itshape Li}, {\itshape num\+\_\+f}, field) ? 
+
+Note that the operator compares {\itshape field}s \mbox{\Hypertarget{class_nicolai_sol_a53719ba423b18071cc386b3149d793e8}\label{class_nicolai_sol_a53719ba423b18071cc386b3149d793e8}} 
+\index{NicolaiSol@{NicolaiSol}!test\_nr\_method@{test\_nr\_method}}
+\index{test\_nr\_method@{test\_nr\_method}!NicolaiSol@{NicolaiSol}}
+\doxysubsubsection{\texorpdfstring{test\_nr\_method()}{test\_nr\_method()}}
+{\footnotesize\ttfamily void Nicolai\+Sol\+::test\+\_\+nr\+\_\+method (\begin{DoxyParamCaption}\item[{const Vector\+Xi}]{k,  }\item[{const Vector\+Xd}]{lambda,  }\item[{const int}]{LOOP,  }\item[{const int}]{TRIAL,  }\item[{const \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54}{Super\+Potential\+Type}}}]{t = {\ttfamily \mbox{\hyperlink{field__nicolai_8hpp_a7b74c2b14d10a5a960dc9b0c55a57d54a1298016c45f654289df44f4db80fbc6d}{Super\+Potential\+Type\+::\+AlgebraA}}} }\end{DoxyParamCaption})}
+
+
+
+Observe the numerical convergence of NR method for each system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & Power in superpotential \\
+\hline
+{\em lambda} & Coupling \\
+\hline
+{\em LOOP} & Maximum number of iteration \\
+\hline
+{\em TRIAL} & Maximum number of trials \\
+\hline
+{\em t} & Type of Super\+Potential \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{field__nicolai_8hpp}{field\+\_\+nicolai.\+hpp}}\item 
+\mbox{\hyperlink{field__nicolai_8cpp}{field\+\_\+nicolai.\+cpp}}\end{DoxyCompactItemize}

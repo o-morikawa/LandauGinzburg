@@ -1,0 +1,582 @@
+\hypertarget{class_field}{}\doxysection{Field Class Reference}
+\label{class_field}\index{Field@{Field}}
+
+
+Generate normal distributions; Compute convolutions.  
+
+
+
+
+{\ttfamily \#include $<$field\+\_\+class.\+hpp$>$}
+
+Inheritance diagram for Field\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_field}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_field_a3e804c92273d9159f413f227b535c672}\label{class_field_a3e804c92273d9159f413f227b535c672}} 
+\mbox{\hyperlink{class_field_a3e804c92273d9159f413f227b535c672}{Field}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_field}{Field}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_field_aba5f254c100c21bcd02cab0513bfdba0}{Field}} (const int n1, const int n2)
+\begin{DoxyCompactList}\small\item\em Set {\itshape Li=n1} and {\itshape num\+\_\+f=n2}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_field_ace2d5611d6a13c6ab52f25f097bc31bb}{Field}} (const int n1, const int n2, const \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}} n3, const double mean=0.\+0, const double dev=1.\+0)
+\begin{DoxyCompactList}\small\item\em Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_field_aaab21caed2ec54e646999b0743f49b52}{Field}} (const int n1, const int n2, const int n3, const \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}} n4, const double mean=0.\+0, const double dev=1.\+0)
+\begin{DoxyCompactList}\small\item\em Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field}; {\itshape n3} is. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_field_a3bb1ad45cf1df0a4d08a079b9e96d7bf}{Field}} (const Vector\+Xcd \&v, const int num\+\_\+field=1)
+\begin{DoxyCompactList}\small\item\em Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field} from Vector\+Xcd. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_field_affb260c0e14a91186aa210c4c88634fe}{Field}} (const Vector\+Xd \&v, const int num\+\_\+field)
+\begin{DoxyCompactList}\small\item\em Set {\itshape Li} and {\itshape field} from Vector\+Xd; {\itshape num\+\_\+f!=field.\+cols()} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_field_aa27e44cc7de516882b476a3d9155b670}{Field}} (const Matrix\+Xcd \&m)
+\begin{DoxyCompactList}\small\item\em Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field} from Matrix\+Xcd. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_field_a127ebb10d17960f53155fee55e53b129}{Field}} (const Matrix\+Xcd \&m, const int num\+\_\+field)
+\begin{DoxyCompactList}\small\item\em Set {\itshape Li} and {\itshape field} from Matrix\+Xcd, but {\itshape num\+\_\+f=num\+\_\+field} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_field_a45d6e6d09b8f8e46de62b40119d62c60}\label{class_field_a45d6e6d09b8f8e46de62b40119d62c60}} 
+virtual \mbox{\hyperlink{class_field_a45d6e6d09b8f8e46de62b40119d62c60}{$\sim$\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{class_field}{Field}}. \end{DoxyCompactList}\item 
+Matrix\+Xcd \mbox{\hyperlink{class_field_a26223ff94c4dcb7a893a465bf71f0693}{conf}} () const
+\item 
+Vector\+Xcd \mbox{\hyperlink{class_field_a3d5a27f4dfb94823da2167891952402f}{conf}} (const int n) const
+\item 
+Vector\+Xd \mbox{\hyperlink{class_field_a1f42ddfd3ebc7cb0cdad3706be10a5a8}{conf\+\_\+real}} (const int n) const
+\item 
+Vector\+Xd \mbox{\hyperlink{class_field_a93348b6174970b77034d5e48e98ca87c}{conf\+\_\+imag}} (const int n) const
+\item 
+\mbox{\Hypertarget{class_field_a4f3868a5d87856aa97438fa157cf4cf6}\label{class_field_a4f3868a5d87856aa97438fa157cf4cf6}} 
+virtual bool \mbox{\hyperlink{class_field_a4f3868a5d87856aa97438fa157cf4cf6}{operator==}} (const \mbox{\hyperlink{class_field}{Field}} \&f)
+\begin{DoxyCompactList}\small\item\em Is identical ({\itshape Li}, {\itshape num\+\_\+f}) ? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_field_ad1864ffe63104801914b54eb704d82bb}\label{class_field_ad1864ffe63104801914b54eb704d82bb}} 
+virtual bool \mbox{\hyperlink{class_field_ad1864ffe63104801914b54eb704d82bb}{operator!=}} (const \mbox{\hyperlink{class_field}{Field}} \&f)
+\begin{DoxyCompactList}\small\item\em Not identical ({\itshape Li}, {\itshape num\+\_\+f}) ? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_field_ad2bfe0f00fe741b34e3c3a96244a06d5}\label{class_field_ad2bfe0f00fe741b34e3c3a96244a06d5}} 
+virtual \mbox{\hyperlink{class_field}{Field}} \& \mbox{\hyperlink{class_field_ad2bfe0f00fe741b34e3c3a96244a06d5}{operator$\ast$=}} (const double n)
+\begin{DoxyCompactList}\small\item\em Multiply by a real number {\itshape n}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_field_aaf605dfee18ed96e7d83efb09feb7569}\label{class_field_aaf605dfee18ed96e7d83efb09feb7569}} 
+virtual \mbox{\hyperlink{class_field}{Field}} \& \mbox{\hyperlink{class_field_aaf605dfee18ed96e7d83efb09feb7569}{operator/=}} (const double n)
+\begin{DoxyCompactList}\small\item\em Devide by a real number {\itshape n}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_a983751cc632c64bb55ebecb0548ac426}{conv}} (const int n1, const int n2) const
+\begin{DoxyCompactList}\small\item\em Convolution {\itshape field(\+:,n1)$\ast$field(\+:,n2)} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_a0eb31a9ce981f1090008b8f8d358e172}{conjconv}} (const int n) const
+\begin{DoxyCompactList}\small\item\em Convolution {\itshape field(\+:,n)$\ast$conf(field(\+:,n))} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_aa32b574e3385c5fbdbbdafa0f7c8016d}{conv\+\_\+pw}} (const int pw, const int n=0) const
+\begin{DoxyCompactList}\small\item\em Convolution {\itshape field(\+:,n)$\ast$field(\+:,n)$\ast$...$\ast$field(\+:,n)} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_field_a74e6e00210a6bf8b290fbf6d6d01bb8c}\label{class_field_a74e6e00210a6bf8b290fbf6d6d01bb8c}} 
+\mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_a74e6e00210a6bf8b290fbf6d6d01bb8c}{combine\+\_\+with}} (const \mbox{\hyperlink{class_field}{Field}} \&f)
+\begin{DoxyCompactList}\small\item\em Combine with another \mbox{\hyperlink{class_field}{Field}} object; Mutate {\itshape field} ({\itshape Li} and {\itshape num\+\_\+f} are unchaged) except for the case that {\itshape field} is empty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_field_abc0b4e5aa5284e9d386a0f27fcf28d25}\label{class_field_abc0b4e5aa5284e9d386a0f27fcf28d25}} 
+virtual void \mbox{\hyperlink{class_field_abc0b4e5aa5284e9d386a0f27fcf28d25}{show}} () const
+\begin{DoxyCompactList}\small\item\em Output {\itshape Li}, {\itshape field}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_aec5d557c28a8e723279c2bc351d96bc0}{Zero}} (const int n1, const int n2)
+\item 
+static \mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_ab78c9bc12f3a12d11d3ca2ef2f6d1d43}{Zero}} (const int n1, const int n2, const int n3)
+\item 
+static \mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_ad64d9e67d2b05241ec813cf80e65e6c7}{Gauss}} (const int n1, const int n2, const double mean=0.\+0, const double dev=1.\+0)
+\item 
+static \mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_add217582c3c5414a0d05919433d7cfe5}{Gauss}} (const int n1, const int n2, const int n3, const double mean=0.\+0, const double dev=1.\+0)
+\item 
+static \mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_a563c6e76fe9292f3bf2dd436d2eee481}{GaussL}} (const int n1, const int n2, const double mean=0.\+0)
+\item 
+static \mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_a3ba28235b200099b922e6833cd80ba13}{GaussL}} (const int n1, const int n2, const int n3, const double mean=0.\+0)
+\item 
+static \mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_a6d3eab5e1d45e90f9525b7f64d0f38bd}{Gauss\+MT}} (const int n1, const int n2, const double mean=0.\+0, const double dev=1.\+0)
+\item 
+static \mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_a1164383501f450627104cda571e2fc41}{Gauss\+MT}} (const int n1, const int n2, const int n3, const double mean=0.\+0, const double dev=1.\+0)
+\item 
+static \mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_a30683bad93b43c4327a1da9a69dadb81}{Gauss\+MTL}} (const int n1, const int n2, const double mean=0.\+0)
+\item 
+static \mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_ad6fc32516d508c2af894813f9ad1087b}{Gauss\+MTL}} (const int n1, const int n2, const int n3, const double mean=0.\+0)
+\item 
+static \mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_a393ebc8a6294dca37f3ac5c6ebe32ea3}{Vector}} (const Vector\+Xcd \&v, const int num\+\_\+field=1)
+\item 
+static \mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_ad884d2e44079c52826da0b37578aa64b}{Matrix}} (const Matrix\+Xcd \&m)
+\item 
+static \mbox{\hyperlink{class_field}{Field}} \mbox{\hyperlink{class_field_a58580bb3600816415eb440e435a13bdc}{Matrix}} (const Matrix\+Xcd \&m, const int num\+\_\+field)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_field_a6420b8488bc3f7dd52c823587c8dafbd}{setgauss}} (const int num\+\_\+col, const double mean=0.\+0, const double dev=1.\+0)
+\item 
+void \mbox{\hyperlink{class_field_a22585ac12dbf175e57be124d6dd7553d}{setgaussl}} (const int num\+\_\+col, const double mean=0.\+0)
+\item 
+void \mbox{\hyperlink{class_field_accfdc2b497cd366e141d3d3d559be20b}{setgaussmt}} (const int num\+\_\+col, const double mean=0.\+0, const double dev=1.\+0)
+\item 
+void \mbox{\hyperlink{class_field_a65f85fb63c884c480edd6980967eb65d}{setgaussmtl}} (const int num\+\_\+col, const double mean=0.\+0)
+\item 
+void \mbox{\hyperlink{class_field_a7c3586ce462ade2c4897198f35b0c838}{setconf}} (const int num\+\_\+col, const \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}} n, const double mean=0.\+0, const double dev=1.\+0)
+\item 
+void \mbox{\hyperlink{class_field_af593919203f5b8a081fc577fd9fcf6fa}{setconf}} (const Vector\+Xcd \&v, const int num\+\_\+field=1)
+\item 
+void \mbox{\hyperlink{class_field_ac64845bf872d41690691f5d5c8631e73}{setconf}} (const Vector\+Xd \&v, const int num\+\_\+field)
+\item 
+void \mbox{\hyperlink{class_field_ad17beb6200014b9515cdff28e292a174}{setconf}} (const Matrix\+Xcd \&m)
+\item 
+void \mbox{\hyperlink{class_field_a43dbebd220dc5fe44104810082b931fd}{setconf}} (const Matrix\+Xcd \&m, const int num\+\_\+field)
+\item 
+Matrix\+Xcd \mbox{\hyperlink{class_field_afbaf802edf6ce32b8e6697cc966727ed}{vector2matrix}} (const int n) const
+\item 
+Matrix\+Xcd \mbox{\hyperlink{class_field_a3dd5f477031e500c91990fbd6ead0bfc}{field2matrix}} (const int n) const
+\item 
+Matrix\+Xcd \mbox{\hyperlink{class_field_a97dd32a47ace1dbb0332898c582af9db}{dfield2matrix}} (const int n) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_field_a805af9dfbf591f6339552334b4c1be50}\label{class_field_a805af9dfbf591f6339552334b4c1be50}} 
+int \mbox{\hyperlink{class_field_a805af9dfbf591f6339552334b4c1be50}{Li}}
+\begin{DoxyCompactList}\small\item\em Physical box size, {\itshape N\+\_\+0=N\+\_\+1}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_field_aa71d97836a2c505689f64fa5d99ecae9}\label{class_field_aa71d97836a2c505689f64fa5d99ecae9}} 
+int \mbox{\hyperlink{class_field_aa71d97836a2c505689f64fa5d99ecae9}{num\+\_\+f}}
+\begin{DoxyCompactList}\small\item\em Number of superfields. \end{DoxyCompactList}\item 
+Matrix\+Xcd \mbox{\hyperlink{class_field_a1216cc1f44a7c0d53888c826e94ae525}{field}}
+\begin{DoxyCompactList}\small\item\em Superfields. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generate normal distributions; Compute convolutions. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_potential}{Potential}} 
+
+\mbox{\hyperlink{class_potential_n_r}{Potential\+NR}} 
+
+\mbox{\hyperlink{class_nicolai}{Nicolai}} 
+
+\mbox{\hyperlink{class_scalar}{Scalar}} 
+
+\mbox{\hyperlink{class_nicolai_sol}{Nicolai\+Sol}} 
+
+\mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_field_aba5f254c100c21bcd02cab0513bfdba0}\label{class_field_aba5f254c100c21bcd02cab0513bfdba0}} 
+\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Field()}{Field()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily Field\+::\+Field (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Set {\itshape Li=n1} and {\itshape num\+\_\+f=n2}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Set {\itshape Li} \\
+\hline
+{\em n2} & Set {\itshape num\+\_\+f} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_field_ace2d5611d6a13c6ab52f25f097bc31bb}\label{class_field_ace2d5611d6a13c6ab52f25f097bc31bb}} 
+\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Field()}{Field()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily Field\+::\+Field (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}}}]{n3,  }\item[{const double}]{mean = {\ttfamily 0.0},  }\item[{const double}]{dev = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Set {\itshape Li} \\
+\hline
+{\em n2} & Set {\itshape num\+\_\+f} \\
+\hline
+{\em n3} & Set normal distribution type \\
+\hline
+{\em mean} & Parameter of normal distribution \\
+\hline
+{\em dev} & Parameter of normal distribution \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a7c3586ce462ade2c4897198f35b0c838}{setconf}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_aaab21caed2ec54e646999b0743f49b52}\label{class_field_aaab21caed2ec54e646999b0743f49b52}} 
+\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Field()}{Field()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily Field\+::\+Field (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const int}]{n3,  }\item[{const \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}}}]{n4,  }\item[{const double}]{mean = {\ttfamily 0.0},  }\item[{const double}]{dev = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field}; {\itshape n3} is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Set {\itshape Li} \\
+\hline
+{\em n2} & Set {\itshape num\+\_\+f} \\
+\hline
+{\em n3} & Set {\itshape {\itshape field.\+cols()}}; It is possible that {\itshape n3!=num\+\_\+f} \\
+\hline
+{\em n4} & Set normal distribution type \\
+\hline
+{\em mean} & Parameter of normal distribution \\
+\hline
+{\em dev} & Parameter of normal distribution \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a7c3586ce462ade2c4897198f35b0c838}{setconf}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_a3bb1ad45cf1df0a4d08a079b9e96d7bf}\label{class_field_a3bb1ad45cf1df0a4d08a079b9e96d7bf}} 
+\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Field()}{Field()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily Field\+::\+Field (\begin{DoxyParamCaption}\item[{const Vector\+Xcd \&}]{v,  }\item[{const int}]{num\+\_\+field = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field} from Vector\+Xcd. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a7c3586ce462ade2c4897198f35b0c838}{setconf}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_affb260c0e14a91186aa210c4c88634fe}\label{class_field_affb260c0e14a91186aa210c4c88634fe}} 
+\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Field()}{Field()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily Field\+::\+Field (\begin{DoxyParamCaption}\item[{const Vector\+Xd \&}]{v,  }\item[{const int}]{num\+\_\+field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set {\itshape Li} and {\itshape field} from Vector\+Xd; {\itshape num\+\_\+f!=field.\+cols()} 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a7c3586ce462ade2c4897198f35b0c838}{setconf}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_aa27e44cc7de516882b476a3d9155b670}\label{class_field_aa27e44cc7de516882b476a3d9155b670}} 
+\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Field()}{Field()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily Field\+::\+Field (\begin{DoxyParamCaption}\item[{const Matrix\+Xcd \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field} from Matrix\+Xcd. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a7c3586ce462ade2c4897198f35b0c838}{setconf}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_a127ebb10d17960f53155fee55e53b129}\label{class_field_a127ebb10d17960f53155fee55e53b129}} 
+\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Field()}{Field()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily Field\+::\+Field (\begin{DoxyParamCaption}\item[{const Matrix\+Xcd \&}]{m,  }\item[{const int}]{num\+\_\+field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set {\itshape Li} and {\itshape field} from Matrix\+Xcd, but {\itshape num\+\_\+f=num\+\_\+field} 
+
+It is possible that {\itshape num\+\_\+f!=field.\+cols()} \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a7c3586ce462ade2c4897198f35b0c838}{setconf}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_field_a26223ff94c4dcb7a893a465bf71f0693}\label{class_field_a26223ff94c4dcb7a893a465bf71f0693}} 
+\index{Field@{Field}!conf@{conf}}
+\index{conf@{conf}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{conf()}{conf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Matrix\+Xcd Field\+::conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+All superfields \mbox{\Hypertarget{class_field_a3d5a27f4dfb94823da2167891952402f}\label{class_field_a3d5a27f4dfb94823da2167891952402f}} 
+\index{Field@{Field}!conf@{conf}}
+\index{conf@{conf}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{conf()}{conf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Vector\+Xcd Field\+::conf (\begin{DoxyParamCaption}\item[{const int}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+{\itshape n-\/th} superfield \mbox{\Hypertarget{class_field_a93348b6174970b77034d5e48e98ca87c}\label{class_field_a93348b6174970b77034d5e48e98ca87c}} 
+\index{Field@{Field}!conf\_imag@{conf\_imag}}
+\index{conf\_imag@{conf\_imag}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{conf\_imag()}{conf\_imag()}}
+{\footnotesize\ttfamily Vector\+Xd Field\+::conf\+\_\+imag (\begin{DoxyParamCaption}\item[{const int}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Imaginary part of {\itshape n-\/th} superfield \mbox{\Hypertarget{class_field_a1f42ddfd3ebc7cb0cdad3706be10a5a8}\label{class_field_a1f42ddfd3ebc7cb0cdad3706be10a5a8}} 
+\index{Field@{Field}!conf\_real@{conf\_real}}
+\index{conf\_real@{conf\_real}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{conf\_real()}{conf\_real()}}
+{\footnotesize\ttfamily Vector\+Xd Field\+::conf\+\_\+real (\begin{DoxyParamCaption}\item[{const int}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Real part of {\itshape n-\/th} superfield \mbox{\Hypertarget{class_field_a0eb31a9ce981f1090008b8f8d358e172}\label{class_field_a0eb31a9ce981f1090008b8f8d358e172}} 
+\index{Field@{Field}!conjconv@{conjconv}}
+\index{conjconv@{conjconv}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{conjconv()}{conjconv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_field}{Field}} Field\+::conjconv (\begin{DoxyParamCaption}\item[{const int}]{n }\end{DoxyParamCaption}) const}
+
+
+
+Convolution {\itshape field(\+:,n)$\ast$conf(field(\+:,n))} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & {\itshape n-\/th} superfield \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_field_a983751cc632c64bb55ebecb0548ac426}\label{class_field_a983751cc632c64bb55ebecb0548ac426}} 
+\index{Field@{Field}!conv@{conv}}
+\index{conv@{conv}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{conv()}{conv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_field}{Field}} Field\+::conv (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2 }\end{DoxyParamCaption}) const}
+
+
+
+Convolution {\itshape field(\+:,n1)$\ast$field(\+:,n2)} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & {\itshape n1-\/th} superfield \\
+\hline
+{\em n2} & {\itshape n2-\/th} superfield \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_field_aa32b574e3385c5fbdbbdafa0f7c8016d}\label{class_field_aa32b574e3385c5fbdbbdafa0f7c8016d}} 
+\index{Field@{Field}!conv\_pw@{conv\_pw}}
+\index{conv\_pw@{conv\_pw}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{conv\_pw()}{conv\_pw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_field}{Field}} Field\+::conv\+\_\+pw (\begin{DoxyParamCaption}\item[{const int}]{pw,  }\item[{const int}]{n = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+
+
+Convolution {\itshape field(\+:,n)$\ast$field(\+:,n)$\ast$...$\ast$field(\+:,n)} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pw} & Convolution times \\
+\hline
+{\em n} & {\itshape n-\/th} superfield \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_field_a97dd32a47ace1dbb0332898c582af9db}\label{class_field_a97dd32a47ace1dbb0332898c582af9db}} 
+\index{Field@{Field}!dfield2matrix@{dfield2matrix}}
+\index{dfield2matrix@{dfield2matrix}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{dfield2matrix()}{dfield2matrix()}}
+{\footnotesize\ttfamily Matrix\+Xcd Field\+::dfield2matrix (\begin{DoxyParamCaption}\item[{const int}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+From vector-\/type {\itshape field(p,n)} to matrix-\/type {\itshape field(p,n)$\ast$field(q,n)} \mbox{\Hypertarget{class_field_a3dd5f477031e500c91990fbd6ead0bfc}\label{class_field_a3dd5f477031e500c91990fbd6ead0bfc}} 
+\index{Field@{Field}!field2matrix@{field2matrix}}
+\index{field2matrix@{field2matrix}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{field2matrix()}{field2matrix()}}
+{\footnotesize\ttfamily Matrix\+Xcd Field\+::field2matrix (\begin{DoxyParamCaption}\item[{const int}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+From vector-\/type {\itshape field(p,n)} to matrix-\/type {\itshape field(p-\/q,n)} \mbox{\Hypertarget{class_field_ad64d9e67d2b05241ec813cf80e65e6c7}\label{class_field_ad64d9e67d2b05241ec813cf80e65e6c7}} 
+\index{Field@{Field}!Gauss@{Gauss}}
+\index{Gauss@{Gauss}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Gauss()}{Gauss()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_field}{Field}} Field\+::\+Gauss (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const double}]{mean = {\ttfamily 0.0},  }\item[{const double}]{dev = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a6420b8488bc3f7dd52c823587c8dafbd}{setgauss}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_add217582c3c5414a0d05919433d7cfe5}\label{class_field_add217582c3c5414a0d05919433d7cfe5}} 
+\index{Field@{Field}!Gauss@{Gauss}}
+\index{Gauss@{Gauss}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Gauss()}{Gauss()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_field}{Field}} Field\+::\+Gauss (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const int}]{n3,  }\item[{const double}]{mean = {\ttfamily 0.0},  }\item[{const double}]{dev = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a6420b8488bc3f7dd52c823587c8dafbd}{setgauss}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_a563c6e76fe9292f3bf2dd436d2eee481}\label{class_field_a563c6e76fe9292f3bf2dd436d2eee481}} 
+\index{Field@{Field}!GaussL@{GaussL}}
+\index{GaussL@{GaussL}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{GaussL()}{GaussL()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_field}{Field}} Field\+::\+GaussL (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const double}]{mean = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a22585ac12dbf175e57be124d6dd7553d}{setgaussl}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_a3ba28235b200099b922e6833cd80ba13}\label{class_field_a3ba28235b200099b922e6833cd80ba13}} 
+\index{Field@{Field}!GaussL@{GaussL}}
+\index{GaussL@{GaussL}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{GaussL()}{GaussL()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_field}{Field}} Field\+::\+GaussL (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const int}]{n3,  }\item[{const double}]{mean = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a22585ac12dbf175e57be124d6dd7553d}{setgaussl}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_a6d3eab5e1d45e90f9525b7f64d0f38bd}\label{class_field_a6d3eab5e1d45e90f9525b7f64d0f38bd}} 
+\index{Field@{Field}!GaussMT@{GaussMT}}
+\index{GaussMT@{GaussMT}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{GaussMT()}{GaussMT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_field}{Field}} Field\+::\+Gauss\+MT (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const double}]{mean = {\ttfamily 0.0},  }\item[{const double}]{dev = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_accfdc2b497cd366e141d3d3d559be20b}{setgaussmt}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_a1164383501f450627104cda571e2fc41}\label{class_field_a1164383501f450627104cda571e2fc41}} 
+\index{Field@{Field}!GaussMT@{GaussMT}}
+\index{GaussMT@{GaussMT}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{GaussMT()}{GaussMT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_field}{Field}} Field\+::\+Gauss\+MT (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const int}]{n3,  }\item[{const double}]{mean = {\ttfamily 0.0},  }\item[{const double}]{dev = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_accfdc2b497cd366e141d3d3d559be20b}{setgaussmt}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_a30683bad93b43c4327a1da9a69dadb81}\label{class_field_a30683bad93b43c4327a1da9a69dadb81}} 
+\index{Field@{Field}!GaussMTL@{GaussMTL}}
+\index{GaussMTL@{GaussMTL}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{GaussMTL()}{GaussMTL()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_field}{Field}} Field\+::\+Gauss\+MTL (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const double}]{mean = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a65f85fb63c884c480edd6980967eb65d}{setgaussmtl}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_ad6fc32516d508c2af894813f9ad1087b}\label{class_field_ad6fc32516d508c2af894813f9ad1087b}} 
+\index{Field@{Field}!GaussMTL@{GaussMTL}}
+\index{GaussMTL@{GaussMTL}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{GaussMTL()}{GaussMTL()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_field}{Field}} Field\+::\+Gauss\+MTL (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const int}]{n3,  }\item[{const double}]{mean = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a65f85fb63c884c480edd6980967eb65d}{setgaussmtl}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_ad884d2e44079c52826da0b37578aa64b}\label{class_field_ad884d2e44079c52826da0b37578aa64b}} 
+\index{Field@{Field}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_field}{Field}} Field\+::\+Matrix (\begin{DoxyParamCaption}\item[{const Matrix\+Xcd \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a7c3586ce462ade2c4897198f35b0c838}{setconf}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_a58580bb3600816415eb440e435a13bdc}\label{class_field_a58580bb3600816415eb440e435a13bdc}} 
+\index{Field@{Field}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_field}{Field}} Field\+::\+Matrix (\begin{DoxyParamCaption}\item[{const Matrix\+Xcd \&}]{m,  }\item[{const int}]{num\+\_\+field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a7c3586ce462ade2c4897198f35b0c838}{setconf}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_a7c3586ce462ade2c4897198f35b0c838}\label{class_field_a7c3586ce462ade2c4897198f35b0c838}} 
+\index{Field@{Field}!setconf@{setconf}}
+\index{setconf@{setconf}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{setconf()}{setconf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void Field\+::setconf (\begin{DoxyParamCaption}\item[{const int}]{num\+\_\+col,  }\item[{const \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}}}]{n,  }\item[{const double}]{mean = {\ttfamily 0.0},  }\item[{const double}]{dev = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generate normal distributions with type Distribution \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_ad17beb6200014b9515cdff28e292a174}\label{class_field_ad17beb6200014b9515cdff28e292a174}} 
+\index{Field@{Field}!setconf@{setconf}}
+\index{setconf@{setconf}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{setconf()}{setconf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void Field\+::setconf (\begin{DoxyParamCaption}\item[{const Matrix\+Xcd \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generate from Matrix\+Xcd data \mbox{\Hypertarget{class_field_a43dbebd220dc5fe44104810082b931fd}\label{class_field_a43dbebd220dc5fe44104810082b931fd}} 
+\index{Field@{Field}!setconf@{setconf}}
+\index{setconf@{setconf}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{setconf()}{setconf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void Field\+::setconf (\begin{DoxyParamCaption}\item[{const Matrix\+Xcd \&}]{m,  }\item[{const int}]{num\+\_\+field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generate from Matrix\+Xcd data and set number of fields with {\itshape num\+\_\+field} \mbox{\Hypertarget{class_field_af593919203f5b8a081fc577fd9fcf6fa}\label{class_field_af593919203f5b8a081fc577fd9fcf6fa}} 
+\index{Field@{Field}!setconf@{setconf}}
+\index{setconf@{setconf}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{setconf()}{setconf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void Field\+::setconf (\begin{DoxyParamCaption}\item[{const Vector\+Xcd \&}]{v,  }\item[{const int}]{num\+\_\+field = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generate from Vector\+Xcd data \mbox{\Hypertarget{class_field_ac64845bf872d41690691f5d5c8631e73}\label{class_field_ac64845bf872d41690691f5d5c8631e73}} 
+\index{Field@{Field}!setconf@{setconf}}
+\index{setconf@{setconf}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{setconf()}{setconf()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void Field\+::setconf (\begin{DoxyParamCaption}\item[{const Vector\+Xd \&}]{v,  }\item[{const int}]{num\+\_\+field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generate from Vector\+Xd data \mbox{\Hypertarget{class_field_a6420b8488bc3f7dd52c823587c8dafbd}\label{class_field_a6420b8488bc3f7dd52c823587c8dafbd}} 
+\index{Field@{Field}!setgauss@{setgauss}}
+\index{setgauss@{setgauss}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{setgauss()}{setgauss()}}
+{\footnotesize\ttfamily void Field\+::setgauss (\begin{DoxyParamCaption}\item[{const int}]{num\+\_\+col,  }\item[{const double}]{mean = {\ttfamily 0.0},  }\item[{const double}]{dev = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generate normal distributions by random device with unit deviation; \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a23ef3956ef6ffe1d0680990e79c885b6}{Distribution\+::\+Gauss\+\_\+unit}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_a22585ac12dbf175e57be124d6dd7553d}\label{class_field_a22585ac12dbf175e57be124d6dd7553d}} 
+\index{Field@{Field}!setgaussl@{setgaussl}}
+\index{setgaussl@{setgaussl}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{setgaussl()}{setgaussl()}}
+{\footnotesize\ttfamily void Field\+::setgaussl (\begin{DoxyParamCaption}\item[{const int}]{num\+\_\+col,  }\item[{const double}]{mean = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generate normal distributions by random device with deviation {\itshape Li/\+SQRT2} \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42aa75ebb463e61293860ca53716d4a71bc}{Distribution\+::\+Gauss\+\_\+L}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_accfdc2b497cd366e141d3d3d559be20b}\label{class_field_accfdc2b497cd366e141d3d3d559be20b}} 
+\index{Field@{Field}!setgaussmt@{setgaussmt}}
+\index{setgaussmt@{setgaussmt}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{setgaussmt()}{setgaussmt()}}
+{\footnotesize\ttfamily void Field\+::setgaussmt (\begin{DoxyParamCaption}\item[{const int}]{num\+\_\+col,  }\item[{const double}]{mean = {\ttfamily 0.0},  }\item[{const double}]{dev = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generate normal distributions by Mersenne twistor with unit deviation \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a9a54f680f546dc685eb4f0362fe75a69}{Distribution\+::\+Gauss\+\_\+\+MT\+\_\+unit}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_a65f85fb63c884c480edd6980967eb65d}\label{class_field_a65f85fb63c884c480edd6980967eb65d}} 
+\index{Field@{Field}!setgaussmtl@{setgaussmtl}}
+\index{setgaussmtl@{setgaussmtl}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{setgaussmtl()}{setgaussmtl()}}
+{\footnotesize\ttfamily void Field\+::setgaussmtl (\begin{DoxyParamCaption}\item[{const int}]{num\+\_\+col,  }\item[{const double}]{mean = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generate normal distributions by Mersenne twistor with deviation {\itshape Li/\+SQRT2} \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42abd1363374cef247cde27493de0f18993}{Distribution\+::\+Gauss\+\_\+\+MT\+\_\+L}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_a393ebc8a6294dca37f3ac5c6ebe32ea3}\label{class_field_a393ebc8a6294dca37f3ac5c6ebe32ea3}} 
+\index{Field@{Field}!Vector@{Vector}}
+\index{Vector@{Vector}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_field}{Field}} Field\+::\+Vector (\begin{DoxyParamCaption}\item[{const Vector\+Xcd \&}]{v,  }\item[{const int}]{num\+\_\+field = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a7c3586ce462ade2c4897198f35b0c838}{setconf}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_afbaf802edf6ce32b8e6697cc966727ed}\label{class_field_afbaf802edf6ce32b8e6697cc966727ed}} 
+\index{Field@{Field}!vector2matrix@{vector2matrix}}
+\index{vector2matrix@{vector2matrix}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{vector2matrix()}{vector2matrix()}}
+{\footnotesize\ttfamily Matrix\+Xcd Field\+::vector2matrix (\begin{DoxyParamCaption}\item[{const int}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+From vector-\/type {\itshape field(p)} to matrix-\/type {\itshape field(p\+\_\+0,p\+\_\+1)} \mbox{\Hypertarget{class_field_aec5d557c28a8e723279c2bc351d96bc0}\label{class_field_aec5d557c28a8e723279c2bc351d96bc0}} 
+\index{Field@{Field}!Zero@{Zero}}
+\index{Zero@{Zero}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Zero()}{Zero()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_field}{Field}} Field\+::\+Zero (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a7c3586ce462ade2c4897198f35b0c838}{setconf}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_field_ab78c9bc12f3a12d11d3ca2ef2f6d1d43}\label{class_field_ab78c9bc12f3a12d11d3ca2ef2f6d1d43}} 
+\index{Field@{Field}!Zero@{Zero}}
+\index{Zero@{Zero}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Zero()}{Zero()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_field}{Field}} Field\+::\+Zero (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const int}]{n3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field_a7c3586ce462ade2c4897198f35b0c838}{setconf}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_field_a1216cc1f44a7c0d53888c826e94ae525}\label{class_field_a1216cc1f44a7c0d53888c826e94ae525}} 
+\index{Field@{Field}!field@{field}}
+\index{field@{field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{field}{field}}
+{\footnotesize\ttfamily Matrix\+Xcd Field\+::field\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Superfields. 
+
+{\itshape i-\/th} superfield\+: {\itshape field(\+:,i)} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{field__class_8hpp}{field\+\_\+class.\+hpp}}\item 
+\mbox{\hyperlink{field__class_8cpp}{field\+\_\+class.\+cpp}}\end{DoxyCompactItemize}

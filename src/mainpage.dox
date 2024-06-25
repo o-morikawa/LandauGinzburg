@@ -1,0 +1,134 @@
+/**
+ * \mainpage Numerical study of the N=2 Landau--Ginzburg models
+ * \author Okuto Morikawa
+ * \date   Created on May 8 2018
+ *
+ *
+ *
+ * \section main_sec User's guide
+ *
+ * <b>
+ * Code set for the generation of the configuration of $N(p)$,
+ * and the computation of $A(p)$ and sign determinant
+ * </b>
+ *
+ * \subsection main_subsec1 Environment
+ * Ubuntu 16.04: landau [Xeon E5 2660V4 2.0GHz 28C/56T],
+ *               lifshitz2\&3 [Xeon Silver 4114 2.20GHz 10C/20T]
+ *
+ *
+ * \subsection main_subsec2 Command
+ * <tt>g++ -std=c++11 (-O2) -fopenmp </tt>
+ *
+ *
+ * \subsection main_subsec3 Files
+ * \arg field_class.hpp; field_class.cpp
+ * \arg field_potential.hpp; field_potential.cpp
+ * \arg field_nicolai.hpp; field_nicolai.cpp, field_spt.cpp
+ * \arg field_conf.cpp
+ *
+ *
+ * \subsection main_subsec4 Eigen
+ * These codes are based on <b>Eigen v3.3.2</b> \<http://eigen.tuxfamily.org/\>.
+ *
+ * \subsubsection main_subsubsec1 Julia
+ * Computation of some correlation functions
+ * -> <b>julia v0.5.2</b> \<https://julialang.org/\>
+ *
+ *
+ * \subsection main_subsec5 Related pages
+ * \arg @ref more_info1
+ * \arg @ref more_info2
+ * \arg @ref more_info3
+ */
+
+/**
+ * \page more_info1 Preceding numerical studies
+ *
+ * \section refs_sec1 Inspire
+ * H. Suzuki
+ * \<https://inspirehep.net/authors/987060\>
+ * \<https://nrid.nii.ac.jp/ja/nrid/1000090250977/\>
+ * 
+ * Y. Kikukawa
+ * \<https://inspirehep.net/authors/1002999\>
+ * \<https://nrid.nii.ac.jp/ja/nrid/1000020252421/\>
+ *
+ * \section refs_sec2 References
+ * S. Kamata and H. Suzuki, Nucl. Phys. B 854 (2012) 552,
+ * \<https://inspirehep.net/record/917407/\>
+ * \<https://arxiv.org/abs/1107.1367\>
+ *
+ * D. Kadoh and H. Suzuki, Phys. Lett. B 696 (2011) 163,
+ * \<https://inspirehep.net/record/875436/\>
+ * \<https://arxiv.org/abs/1011.0788>
+ *
+ * H. Kawai and Y. Kikukawa, Phys. Rev. D 83 (2011) 074502,
+ * \<https://inspirehep.net/record/856136/\>
+ * \<https://arxiv.org/abs/1005.4671\>
+ *
+ * D. Kadoh and H. Suzuki, Phys. Lett. B 684 (2010) 167,
+ * \<https://inspirehep.net/record/831726/\>
+ * \<https://arxiv.org/abs/0909.3686>
+ *
+ * Y. Kikukawa and Y. Nakayama, Phys. Rev. D 66 (2002) 094508,
+ * \<https://inspirehep.net/record/591030/\>
+ * \<https://arxiv.org/abs/hep-lat/0207013\>
+ */
+
+/**
+ * \page more_info2 Julia language
+ *
+ * \section julia_sec1 julia v0.5.2 on Ubuntu
+ * <tt> sudo add-apt-repository ppa:staticfloat/juliareleases </tt>
+ *
+ * <tt> sudo add-apt-repository ppa:staticfloat/julia-deps    </tt>
+ *
+ * \section julia_sec2 julia v0.5.2 on Mac
+ * \<https://julialang.org/downloads/oldreleases.html\>
+ *
+ * <tt> #!/usr/bin/env bash </tt>
+ *
+ * <tt> set -e </tt>
+ *
+ * <tt> </tt>
+ *
+ * <tt> # Open new terminal. </tt>
+ *
+ * <tt> SOURCE="clear && exec '/Applications/Julia-0.5.app/Contents/Resources/julia/bin/julia'" </tt>
+ *
+ * <tt> DIR=$(pwd) </tt>
+ *
+ * <tt> if [[ "$(uname)" = "Darwin" ]] && [[ -z "$ON_NEW_TERMINAL" ]] && [[ -z "$NO_NEW_TERMINAL" ]] ; then </tt>
+ *
+ * <tt>     osascript -e "tell app \"Terminal\" to do script \"cd $DIR && export ON_NEW_TERMINAL=1 && $SOURCE\"" </tt>
+ *
+ * <tt>     exit 0 </tt>
+ *
+ * <tt> fi </tt>
+ *
+ * <tt> </tt>
+ *
+ * <tt> # Get the directory path and move it. </tt>
+ *
+ * <tt> while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done </tt>
+ *
+ * <tt> DIR="$( cd -P "$( dirname "$SOURCE" )/" && pwd )" </tt>
+ *
+ * <tt> cd "$DIR" </tt>
+ *
+ * \section julia_sec3 Reference
+ * Jeff Bezanson, Stefan Karpinski, Viral B. Shah, and Alan Edelman
+ * ``Julia: A Fast Dynamic Language for Technical Computing,''
+ * arXiv:1209.5145 [cs.PL]
+ *
+ * Jeff Bezanson, Alan Edelman, Stefan Karpinski, and Viral B. Shah
+ * ``Julia: A Fresh Approach to Numerical Computing,''
+ * arXiv:1411.1607 [cs.MS]
+ */
+
+/**
+ * \page more_info3 References in the master thesis (inspire-hep)
+ * \htmlinclude ref_master-thesis.html
+ **/
+

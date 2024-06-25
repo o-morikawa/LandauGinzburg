@@ -1,0 +1,169 @@
+\hypertarget{class_potential_n_r}{}\doxysection{Potential\+NR Class Reference}
+\label{class_potential_n_r}\index{PotentialNR@{PotentialNR}}
+
+
+Compute Matrix and Vector for NR method.  
+
+
+
+
+{\ttfamily \#include $<$field\+\_\+potential.\+hpp$>$}
+
+Inheritance diagram for Potential\+NR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_potential_n_r}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_potential_n_r_a785b96199ad3948d6b7d1414d7acb3cf}\label{class_potential_n_r_a785b96199ad3948d6b7d1414d7acb3cf}} 
+\mbox{\hyperlink{class_potential_n_r_a785b96199ad3948d6b7d1414d7acb3cf}{Potential\+NR}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_potential_n_r}{Potential\+NR}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_potential_n_r_a87913e2005fed42f2e43f4ef756d5629}{Potential\+NR}} (const int n1, const int n2, const \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}} n3=\mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a459e81ba9fb98a6755294c808047dce7}{Distribution\+::\+Zero\+\_\+conf}})
+\begin{DoxyCompactList}\small\item\em Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field-\/field2-\/field3} with zeros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_potential_n_r_a50baccfc1f5ecd106dacbb84c93e908f}{Potential\+NR}} (const int num\+\_\+field, const Matrix\+Xcd \&m1, const Matrix\+Xcd \&m2, const Matrix\+Xcd \&m3)
+\begin{DoxyCompactList}\small\item\em Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field-\/field2-\/field3}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_potential_n_r_abafbfce275c76eaec96515ecceeef029}\label{class_potential_n_r_abafbfce275c76eaec96515ecceeef029}} 
+\mbox{\hyperlink{class_potential_n_r_abafbfce275c76eaec96515ecceeef029}{$\sim$\+Potential\+NR}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{class_potential_n_r}{Potential\+NR}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_potential_n_r_a2517f8881021fcf7b2502d0884c5a45e}\label{class_potential_n_r_a2517f8881021fcf7b2502d0884c5a45e}} 
+bool \mbox{\hyperlink{class_potential_n_r_a2517f8881021fcf7b2502d0884c5a45e}{operator==}} (const \mbox{\hyperlink{class_potential_n_r}{Potential\+NR}} \&p)
+\begin{DoxyCompactList}\small\item\em Is identical ({\itshape Li}, {\itshape num\+\_\+f}) ? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_potential_n_r_ae7e92ea40c6ef92a52e867c3f7053b61}\label{class_potential_n_r_ae7e92ea40c6ef92a52e867c3f7053b61}} 
+bool \mbox{\hyperlink{class_potential_n_r_ae7e92ea40c6ef92a52e867c3f7053b61}{operator!=}} (const \mbox{\hyperlink{class_potential_n_r}{Potential\+NR}} \&p)
+\begin{DoxyCompactList}\small\item\em Not identical ({\itshape Li}, {\itshape num\+\_\+f}) ? \end{DoxyCompactList}\item 
+Vector\+Xd \mbox{\hyperlink{class_potential_n_r_a30b93943ef34d6b88aef3dd81ff71604}{nr\+\_\+pvec}} () const
+\begin{DoxyCompactList}\small\item\em Compute Vector for NR method (Real type) \end{DoxyCompactList}\item 
+Matrix\+Xd \mbox{\hyperlink{class_potential_n_r_a57fc42b5e6a55beabd15ed20dacb73ee}{nr\+\_\+mat}} () const
+\begin{DoxyCompactList}\small\item\em Compute Matrix for NR method (Real type) \end{DoxyCompactList}\item 
+Vector\+Xcd \mbox{\hyperlink{class_potential_n_r_ab44d5c654577da3a4d35ec89edc50453}{nrerr\+\_\+pvec}} () const
+\begin{DoxyCompactList}\small\item\em Compute Vector for NR error estimate (complex type) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_potential_n_r_ab015061199185c772962e93bcfc3f9ba}\label{class_potential_n_r_ab015061199185c772962e93bcfc3f9ba}} 
+void \mbox{\hyperlink{class_potential_n_r_ab015061199185c772962e93bcfc3f9ba}{show}} () const
+\begin{DoxyCompactList}\small\item\em Output {\itshape Li}, {\itshape field}, {\itshape field2}, {\itshape field3}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Compute Matrix and Vector for NR method. 
+
+{\itshape field\+:} {\itshape partial\+\_\+i partial\+\_\+j W(\{A\}) (p) with i $<$= j}
+
+{\itshape field2\+:} {\itshape partial\+\_\+i W(\{A\}) (p)}
+
+{\itshape field3\+:} {\itshape sum\+\_\+j A\+\_\+j partial\+\_\+i partial\+\_\+j W(\{A\}) (p)} \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_field}{Field}} 
+
+\mbox{\hyperlink{class_potential}{Potential}} 
+
+\mbox{\hyperlink{class_nicolai}{Nicolai}} 
+
+\mbox{\hyperlink{class_scalar}{Scalar}} 
+
+\mbox{\hyperlink{class_scalar_a2a2d1bc8ad30e4afe914e056666234ce}{Scalar\+::nr\+\_\+loop}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_potential_n_r_a87913e2005fed42f2e43f4ef756d5629}\label{class_potential_n_r_a87913e2005fed42f2e43f4ef756d5629}} 
+\index{PotentialNR@{PotentialNR}!PotentialNR@{PotentialNR}}
+\index{PotentialNR@{PotentialNR}!PotentialNR@{PotentialNR}}
+\doxysubsubsection{\texorpdfstring{PotentialNR()}{PotentialNR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Potential\+NR\+::\+Potential\+NR (\begin{DoxyParamCaption}\item[{const int}]{n1,  }\item[{const int}]{n2,  }\item[{const \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}}}]{n3 = {\ttfamily \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a459e81ba9fb98a6755294c808047dce7}{Distribution\+::\+Zero\+\_\+conf}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field-\/field2-\/field3} with zeros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Set {\itshape Li} \\
+\hline
+{\em n2} & Set {\itshape num\+\_\+f}; {\itshape n2(n2+1)/2==field.\+cols()}; {\itshape n2==field2.\+cols()==field3.\+cols()} \\
+\hline
+{\em n3} & Set normal distribution type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_potential_n_r_a50baccfc1f5ecd106dacbb84c93e908f}\label{class_potential_n_r_a50baccfc1f5ecd106dacbb84c93e908f}} 
+\index{PotentialNR@{PotentialNR}!PotentialNR@{PotentialNR}}
+\index{PotentialNR@{PotentialNR}!PotentialNR@{PotentialNR}}
+\doxysubsubsection{\texorpdfstring{PotentialNR()}{PotentialNR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Potential\+NR\+::\+Potential\+NR (\begin{DoxyParamCaption}\item[{const int}]{num\+\_\+field,  }\item[{const Matrix\+Xcd \&}]{m1,  }\item[{const Matrix\+Xcd \&}]{m2,  }\item[{const Matrix\+Xcd \&}]{m3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Set {\itshape Li}, {\itshape num\+\_\+f}, and {\itshape field-\/field2-\/field3}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+field} & Set {\itshape num\+\_\+f}; \\
+\hline
+{\em m1} & Set {\itshape field}; \\
+\hline
+{\em m2} & Set {\itshape field2}; \\
+\hline
+{\em m3} & Set {\itshape field3}; \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_potential_n_r_a57fc42b5e6a55beabd15ed20dacb73ee}\label{class_potential_n_r_a57fc42b5e6a55beabd15ed20dacb73ee}} 
+\index{PotentialNR@{PotentialNR}!nr\_mat@{nr\_mat}}
+\index{nr\_mat@{nr\_mat}!PotentialNR@{PotentialNR}}
+\doxysubsubsection{\texorpdfstring{nr\_mat()}{nr\_mat()}}
+{\footnotesize\ttfamily Matrix\+Xd Potential\+NR\+::nr\+\_\+mat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Compute Matrix for NR method (Real type) 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_nicolai}{Nicolai}} 
+
+\mbox{\hyperlink{class_scalar}{Scalar}} 
+
+\mbox{\hyperlink{class_scalar_a2a2d1bc8ad30e4afe914e056666234ce}{Scalar\+::nr\+\_\+loop}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_potential_n_r_a30b93943ef34d6b88aef3dd81ff71604}\label{class_potential_n_r_a30b93943ef34d6b88aef3dd81ff71604}} 
+\index{PotentialNR@{PotentialNR}!nr\_pvec@{nr\_pvec}}
+\index{nr\_pvec@{nr\_pvec}!PotentialNR@{PotentialNR}}
+\doxysubsubsection{\texorpdfstring{nr\_pvec()}{nr\_pvec()}}
+{\footnotesize\ttfamily Vector\+Xd Potential\+NR\+::nr\+\_\+pvec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Compute Vector for NR method (Real type) 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_nicolai}{Nicolai}} 
+
+\mbox{\hyperlink{class_scalar}{Scalar}} 
+
+\mbox{\hyperlink{class_scalar_a2a2d1bc8ad30e4afe914e056666234ce}{Scalar\+::nr\+\_\+loop}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_potential_n_r_ab44d5c654577da3a4d35ec89edc50453}\label{class_potential_n_r_ab44d5c654577da3a4d35ec89edc50453}} 
+\index{PotentialNR@{PotentialNR}!nrerr\_pvec@{nrerr\_pvec}}
+\index{nrerr\_pvec@{nrerr\_pvec}!PotentialNR@{PotentialNR}}
+\doxysubsubsection{\texorpdfstring{nrerr\_pvec()}{nrerr\_pvec()}}
+{\footnotesize\ttfamily Vector\+Xcd Potential\+NR\+::nrerr\+\_\+pvec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Compute Vector for NR error estimate (complex type) 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_nicolai}{Nicolai}} 
+
+\mbox{\hyperlink{class_scalar}{Scalar}} 
+
+\mbox{\hyperlink{class_scalar_a83c4d1a5b928149fb8983a34a1e116d3}{Scalar\+::nr\+\_\+error}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{field__potential_8hpp}{field\+\_\+potential.\+hpp}}\item 
+\mbox{\hyperlink{field__potential_8cpp}{field\+\_\+potential.\+cpp}}\end{DoxyCompactItemize}

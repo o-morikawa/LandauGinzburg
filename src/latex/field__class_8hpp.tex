@@ -1,0 +1,80 @@
+\hypertarget{field__class_8hpp}{}\doxysection{field\+\_\+class.\+hpp File Reference}
+\label{field__class_8hpp}\index{field\_class.hpp@{field\_class.hpp}}
+
+
+Definition of the class \mbox{\hyperlink{class_field}{Field}}.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include \char`\"{}Eigen/\+LU\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_field}{Field}}
+\begin{DoxyCompactList}\small\item\em Generate normal distributions; Compute convolutions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}} \{ \newline
+\mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a459e81ba9fb98a6755294c808047dce7}{Zero\+\_\+conf}}
+, \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a23ef3956ef6ffe1d0680990e79c885b6}{Gauss\+\_\+unit}}
+, \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42aa75ebb463e61293860ca53716d4a71bc}{Gauss\+\_\+L}}
+, \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a9a54f680f546dc685eb4f0362fe75a69}{Gauss\+\_\+\+MT\+\_\+unit}}
+, \newline
+\mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42abd1363374cef247cde27493de0f18993}{Gauss\+\_\+\+MT\+\_\+L}}
+ \}
+\begin{DoxyCompactList}\small\item\em Types of normal distributions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{field__class_8hpp_a17859872a8df7afd2b78ac3808849f64}\label{field__class_8hpp_a17859872a8df7afd2b78ac3808849f64}} 
+const std\+::complex$<$ double $>$ \mbox{\hyperlink{field__class_8hpp_a17859872a8df7afd2b78ac3808849f64}{IM}} (0, 1.\+0)
+\begin{DoxyCompactList}\small\item\em Imaginary unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definition of the class \mbox{\hyperlink{class_field}{Field}}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{field__class_8cpp}{field\+\_\+class.\+cpp}} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Okuto Morikawa 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}\label{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}} 
+\index{field\_class.hpp@{field\_class.hpp}!Distribution@{Distribution}}
+\index{Distribution@{Distribution}!field\_class.hpp@{field\_class.hpp}}
+\doxysubsubsection{\texorpdfstring{Distribution}{Distribution}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42}{Distribution}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Types of normal distributions. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Zero\_conf@{Zero\_conf}!field\_class.hpp@{field\_class.hpp}}\index{field\_class.hpp@{field\_class.hpp}!Zero\_conf@{Zero\_conf}}}\mbox{\Hypertarget{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a459e81ba9fb98a6755294c808047dce7}\label{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a459e81ba9fb98a6755294c808047dce7}} 
+Zero\+\_\+conf&Zero configuration \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gauss\_unit@{Gauss\_unit}!field\_class.hpp@{field\_class.hpp}}\index{field\_class.hpp@{field\_class.hpp}!Gauss\_unit@{Gauss\_unit}}}\mbox{\Hypertarget{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a23ef3956ef6ffe1d0680990e79c885b6}\label{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a23ef3956ef6ffe1d0680990e79c885b6}} 
+Gauss\+\_\+unit&Random device with unit deviation \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gauss\_L@{Gauss\_L}!field\_class.hpp@{field\_class.hpp}}\index{field\_class.hpp@{field\_class.hpp}!Gauss\_L@{Gauss\_L}}}\mbox{\Hypertarget{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42aa75ebb463e61293860ca53716d4a71bc}\label{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42aa75ebb463e61293860ca53716d4a71bc}} 
+Gauss\+\_\+L&Random device with deviation {\itshape Li/\+SQRT2} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gauss\_MT\_unit@{Gauss\_MT\_unit}!field\_class.hpp@{field\_class.hpp}}\index{field\_class.hpp@{field\_class.hpp}!Gauss\_MT\_unit@{Gauss\_MT\_unit}}}\mbox{\Hypertarget{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a9a54f680f546dc685eb4f0362fe75a69}\label{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42a9a54f680f546dc685eb4f0362fe75a69}} 
+Gauss\+\_\+\+MT\+\_\+unit&Mersenne twistor with unit deviation \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gauss\_MT\_L@{Gauss\_MT\_L}!field\_class.hpp@{field\_class.hpp}}\index{field\_class.hpp@{field\_class.hpp}!Gauss\_MT\_L@{Gauss\_MT\_L}}}\mbox{\Hypertarget{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42abd1363374cef247cde27493de0f18993}\label{field__class_8hpp_aecc95248f15d2eab64617d7dc0afeb42abd1363374cef247cde27493de0f18993}} 
+Gauss\+\_\+\+MT\+\_\+L&Mersenne twistor with deviation {\itshape Li/\+SQRT2} \\
+\hline
+
+\end{DoxyEnumFields}

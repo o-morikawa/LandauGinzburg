@@ -1,0 +1,42 @@
+\hypertarget{field__potential_8hpp}{}\doxysection{field\+\_\+potential.\+hpp File Reference}
+\label{field__potential_8hpp}\index{field\_potential.hpp@{field\_potential.hpp}}
+
+
+Definition of the class \mbox{\hyperlink{class_potential}{Potential}}.  
+
+
+{\ttfamily \#include \char`\"{}field\+\_\+class.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_potential}{Potential}}
+\begin{DoxyCompactList}\small\item\em Compute Jacobian and its sign determinant. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_potential_n_r}{Potential\+NR}}
+\begin{DoxyCompactList}\small\item\em Compute Matrix and Vector for NR method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_matrix_comp}{Matrix\+Comp}}
+\begin{DoxyCompactList}\small\item\em Mainly functions to compute Jacobian for uni-\/superfield. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Matrix\+Xcd \mbox{\hyperlink{namespace_matrix_comp_afc0adc1138fc9fc3d167d7c5afebabcb}{Matrix\+Comp\+::\+Resize\+Matrix}} (const Matrix\+Xcd \&m, const int rw, const int cl)
+\begin{DoxyCompactList}\small\item\em Output m as Matrix\+Xcd(rw, cl) with zeros. \end{DoxyCompactList}\item 
+Matrix\+Xcd \mbox{\hyperlink{namespace_matrix_comp_a76045bce83466a18320f5deff378f52f}{Matrix\+Comp\+::\+Delete\+Zero\+Line}} (const Matrix\+Xcd \&m)
+\begin{DoxyCompactList}\small\item\em Delete a row and a column with {\itshape p=0}, {\itshape q=0}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_matrix_comp_ab38edd36e94565b726ccc554a2771517}{Matrix\+Comp\+::\+Diff\+LU}} (const Matrix\+Xcd \&m, const Partial\+Piv\+LU$<$ Matrix\+Xcd $>$ \&lu)
+\begin{DoxyCompactList}\small\item\em Difference between a matrix and its LU decomposition. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_matrix_comp_ae696d65506ce69d17ed7123ed2b5307f}{Matrix\+Comp\+::\+Sign\+Det}} (const Matrix\+Xcd \&m, const int debug=0)
+\begin{DoxyCompactList}\small\item\em Sign of determinant with LU Decomposition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definition of the class \mbox{\hyperlink{class_potential}{Potential}}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{field__potential_8cpp}{field\+\_\+potential.\+cpp}} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Okuto Morikawa 
+\end{DoxyAuthor}
