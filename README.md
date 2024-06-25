@@ -25,6 +25,7 @@ Ubuntu 16.04: landau [Xeon E5 2660V4 2.0GHz 28C/56T], lifshitz2\&3 [Xeon Silver 
 
 ### Eigen
 These codes are based on [Eigen v3.3.2](http://eigen.tuxfamily.org/).
+Please download the Eigen code set as "Eigen" directory in src/src_imp.
 
 ### Julia
 Computation of some correlation functions by [julia v0.5.2](https://julialang.org/)
