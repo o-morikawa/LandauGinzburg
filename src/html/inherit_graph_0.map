@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_field.html" title="Generate normal distributions; Compute convolutions. " alt="" coords="5,56,56,83"/>
+<area shape="rect" id="node2" href="$class_nicolai.html" title="Nicolai map; Compute Vector for NR method. " alt="" coords="109,5,172,32"/>
+<area shape="rect" id="node4" href="$class_potential.html" title="Compute Jacobian and its sign determinant. " alt="" coords="104,56,177,83"/>
+<area shape="rect" id="node6" href="$class_scalar.html" title="An solution of Nicolai map; Update to a new solution with NR method; Compute some types of superpoten..." alt="" coords="111,107,170,133"/>
+<area shape="rect" id="node3" href="$class_nicolai_sol.html" title="Execute the Newton–Raphson method; Combine solutions; Obtain sign det for each Scalar. " alt="" coords="231,5,313,32"/>
+<area shape="rect" id="node5" href="$class_potential_n_r.html" title="Compute Matrix and Vector for NR method. " alt="" coords="225,56,319,83"/>
+</map>
